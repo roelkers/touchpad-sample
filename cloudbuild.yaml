@@ -1,0 +1,10 @@
+steps:
+# Install
+- name: 'gcr.io/cloud-builders/yarn'
+  args: ['install']
+# Build
+- name: 'gcr.io/cloud-builders/yarn'
+  args: ['run', 'build']
+# Deploy
+- name: 'gcr.io/touchpad-sample/firebase'
+  args: ['deploy']
