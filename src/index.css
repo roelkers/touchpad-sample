@@ -15,5 +15,27 @@ code {
 .touchpad {
   width: 100vw;
   height: 100vh;
-  background-color: #FFAAAA;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.soundfield {
+  width: 50%;
+  height: 50%;
+}
+
+.soundfield--turquoise {
+  background-color: #C0B4FE
+}
+
+.soundfield--pink {
+  background-color: #E6A3BE
+}
+
+.soundfield--green {
+  background-color: #B4FEC7
+}
+
+.soundfield--yellow {
+  background-color: #E8E492;
 }

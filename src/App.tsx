@@ -4,8 +4,6 @@ import Touchpad from './Touchpad'
 
 const App: React.FC = () => {
 
-
-
   return (
     <div className="App">
       <Touchpad />
