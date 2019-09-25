@@ -29,9 +29,7 @@ app.post("/upload", (req, res) => {
       return;
     }
     let fileUpload = bucket.file(files[0].originalname);
-    /*
-   req.bucket.upload("assets/avatar/5ce7f5c25958b012805bb4f3_Logo-100-1.jpg").then(   //<-- if we have to upload local file, pass path of that file
-  */
+
   // Get File from request Form data.
   fileUpload.save(new Buffer(files[0].buffer)).then(  
       (result : any) => {
