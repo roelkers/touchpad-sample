@@ -3,6 +3,10 @@ node_js:
   - "node"
 script:
   -
+before_install:
+  - cd functions
+  - yarn 
+  . cd ..
 deploy:
   provider: firebase
   skip_cleanup: true
