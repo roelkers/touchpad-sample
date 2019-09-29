@@ -14,3 +14,6 @@ before_install:
 before_deploy:
 - yarn global add typescript@^3.2.2
 - yarn global add tslint@^5.12.0
+- cd functions
+- yarn 
+- cd ..
