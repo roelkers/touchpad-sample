@@ -4,7 +4,7 @@ import Touchpad from './Touchpad'
 import Join from './Join'
 import Login from './Login'
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
-import config from './firebase.config'
+import config from '../config/firebase.config'
 import * as firebase from 'firebase'
 import { IAuthContext } from './interfaces'
 

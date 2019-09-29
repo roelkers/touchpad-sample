@@ -1,7 +1,7 @@
 const functions = require('firebase-functions')
 import * as express from 'express'
 const fileParser = require('express-multipart-file-parser')
-const config = require('../config')
+const config = require('../../config')
 const admin = require("firebase-admin");
 
 const app = express()
