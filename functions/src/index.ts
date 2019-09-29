@@ -28,7 +28,7 @@ app.post("/upload", (req, res) => {
       res.json('file not found');
       return;
     }
-    let fileUpload = bucket.file(files[0].originalname);
+    const fileUpload = bucket.file(files[0].originalname);
 
   // Get File from request Form data.
   fileUpload.save(new Buffer(files[0].buffer)).then(  

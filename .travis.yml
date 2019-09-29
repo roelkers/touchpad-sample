@@ -12,5 +12,5 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_eb83c2d96336_key -iv $encrypted_eb83c2d96336_iv
   -in config/config.tar.enc -out config/config.tar -d
 before_deploy:
-- yarn global add typescript
-- yarn global add tslint
+- yarn global add typescript@^3.2.2
+- yarn global add tslint@^5.12.0
