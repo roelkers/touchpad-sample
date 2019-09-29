@@ -11,10 +11,6 @@
   },
   "compileOnSave": true,
   "include": [
-    "src"
-  ],
-  "typeRoots": [
-    "../node_modules/@types",
-    "src/@types"
+    "src", "src/express.d.ts"
   ]
 }
