@@ -6,7 +6,7 @@ const admin = require("firebase-admin");
 
 const app = express()
 
-const serviceAccount = require(`../config/${config.fireBasePrivateKeyPath}`);
+const serviceAccount = require(`../../config/${config.fireBasePrivateKeyPath}`);
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
