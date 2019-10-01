@@ -39,3 +39,15 @@ code {
 .soundfield--yellow {
   background-color: #E8E492;
 }
+
+.sidebar__toggle-button {
+  position: absolute;
+  left: 2em;
+  top: 2em;
+}
+
+.toolbar__edit {
+  position: absolute;
+  left: 4em;
+  top: 2em;
+}

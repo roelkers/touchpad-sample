@@ -1,14 +1,15 @@
 import React from 'react';
 import SoundField from './SoundField'
+import { ITouchpadProps } from './interfaces'
 
-const Touchpad = () => {
+const Touchpad = (props: ITouchpadProps) => {
 
     return (
         <div className='touchpad'>
-            <SoundField classes='soundfield--pink'/>
-            <SoundField classes='soundfield--turquoise'/>
-            <SoundField classes='soundfield--green' />
-            <SoundField classes='soundfield--yellow'/>
+            <SoundField {...props} classes='soundfield--pink'/>
+            <SoundField {...props} classes='soundfield--turquoise'/>
+            <SoundField {...props} classes='soundfield--green' />
+            <SoundField {...props} classes='soundfield--yellow'/>
         </ div>
         )
 }

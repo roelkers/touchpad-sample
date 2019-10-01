@@ -1,0 +1,28 @@
+[debug] [2019-10-01T20:25:45.318Z] ----------------------------------------------------------------------
+[debug] [2019-10-01T20:25:45.319Z] Command:       /home/rufus/.nvm/versions/node/v8.16.1/bin/node /home/rufus/.yarn/bin/firebase serve --only functions
+[debug] [2019-10-01T20:25:45.319Z] CLI Version:   7.3.1
+[debug] [2019-10-01T20:25:45.320Z] Platform:      linux
+[debug] [2019-10-01T20:25:45.320Z] Node Version:  v8.16.1
+[debug] [2019-10-01T20:25:45.320Z] Time:          Tue Oct 01 2019 22:25:45 GMT+0200 (CEST)
+[debug] [2019-10-01T20:25:45.320Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-01T20:25:45.328Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-01T20:25:45.329Z] > authorizing via signed-in user
+[debug] [2019-10-01T20:25:45.329Z] [iam] checking project touchpad-sample for permissions ["firebase.projects.get"]
+[debug] [2019-10-01T20:25:45.331Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-10-01T20:25:45.331Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-10-01T20:25:55.643Z] ----------------------------------------------------------------------
+[debug] [2019-10-01T20:25:55.645Z] Command:       /home/rufus/.nvm/versions/node/v8.16.1/bin/node /home/rufus/.yarn/bin/firebase serve
+[debug] [2019-10-01T20:25:55.645Z] CLI Version:   7.3.1
+[debug] [2019-10-01T20:25:55.645Z] Platform:      linux
+[debug] [2019-10-01T20:25:55.645Z] Node Version:  v8.16.1
+[debug] [2019-10-01T20:25:55.645Z] Time:          Tue Oct 01 2019 22:25:55 GMT+0200 (CEST)
+[debug] [2019-10-01T20:25:55.645Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-01T20:25:55.652Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-01T20:25:55.652Z] > authorizing via signed-in user
+[debug] [2019-10-01T20:25:55.652Z] [iam] checking project touchpad-sample for permissions ["firebase.projects.get"]
+[debug] [2019-10-01T20:25:55.653Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-10-01T20:25:55.653Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>

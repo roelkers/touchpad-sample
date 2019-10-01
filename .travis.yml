@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - "8"
 script:
-- cd functions && yarn && cd .. && yarn run build
+- cd functions && yarn && cd ..
 deploy:
   provider: firebase
   skip_cleanup: true

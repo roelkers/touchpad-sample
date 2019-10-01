@@ -1,10 +1,13 @@
 import React, { useContext } from 'react';
 import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container'
 import TextField from '@material-ui/core/TextField';
 import { AuthContext } from "./App";
 import * as firebase from 'firebase'
+import FormGroup from '@material-ui/core/FormGroup'
+import { RouteComponentProps, withRouter } from "react-router-dom";
 
-const Login = () => {
+const Login = (props: RouteComponentProps) => {
 
     const [values, setValues] = React.useState({
         email: '',
@@ -24,7 +27,10 @@ const Login = () => {
         .auth()
         .signInWithEmailAndPassword(values.email, values.password)
         .then(res => {
-          if (res.user) Auth.setLoggedIn(true);
+          if (res.user) {
+            Auth.setLoggedIn(true);
+            props.history.push('/play')
+          }
         })
         .catch(e => {
           setErrors(e.message);
@@ -32,9 +38,10 @@ const Login = () => {
     };
 
     return(
-        <div>
+        <Container maxWidth='xs'>
             <h1>Login</h1>
             <form onSubmit={e => handleForm(e)}>
+            <FormGroup>
                 <TextField
                     id="email"
                     label="E-Mail"
@@ -49,11 +56,12 @@ const Login = () => {
                     onChange={handleChange('password')}
                     margin="normal"
                 />
-                <Button type='submit'>Login</Button>
+                <Button color='primary' size='large' type='submit'>Login</Button>
                 <span>{errors}</span>
+                </ FormGroup>
             </form>
-        </div>)
+        </Container>)
 
 }
 
-export default Login
+export default withRouter(Login)

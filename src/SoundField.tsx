@@ -4,10 +4,13 @@ import { fromEvent, interval} from 'rxjs'
 import { map, filter, takeUntil, throttle, flatMap, switchMap, tap } from 'rxjs/operators'
 import { JQueryStyleEventEmitter } from 'rxjs/internal/observable/fromEvent';
 import SoundEvent from './SoundEvent'
-import { ISoundField } from './interfaces'
+import { ISoundFieldIntrinsicProps, ITouchpadProps } from './interfaces'
+import SoundFieldSettings from './SoundFieldSettings'
+
+type ISoundField = ISoundFieldIntrinsicProps & ITouchpadProps
 
 const SoundField = (props : ISoundField) => {
-    const { classes } = props
+    const { classes, configModeOn } = props
     const [audioContext, setAudioContext] = useState<AudioContext>(new AudioContext())
     const [audioBuffer, setAudioBuffer] = useState<AudioBuffer | null >(null)
     const [soundEvent, setSoundEvent] = useState<SoundEvent | null> (null)
@@ -81,7 +84,7 @@ const SoundField = (props : ISoundField) => {
 
     return (
         <div ref={touchpadElem} className={`soundfield ${classes}`}>
-
+            {configModeOn && <SoundFieldSettings />}
         </div>
     )
 }
