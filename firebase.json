@@ -15,8 +15,8 @@
   },
   "functions": {
     "predeploy": [
-      "yarn --prefix ./functions/ run lint",
-      "yarn --prefix ./functions/ run build"
+      "yarn --prefix ./functions/ lint",
+      "yarn --prefix ./functions/ build"
     ]
 
   }
