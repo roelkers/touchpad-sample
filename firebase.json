@@ -14,10 +14,6 @@
     ]
   },
   "functions": {
-    "predeploy": [
-      "yarn --prefix ./functions/ lint",
-      "yarn --prefix ./functions/ build"
-    ]
 
   }
 }
