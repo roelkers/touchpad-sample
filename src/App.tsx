@@ -8,6 +8,7 @@ import * as firebase from 'firebase'
 import { IAuthContext } from './interfaces'
 import Sidebar from './Sidebar'
 import Toolbar from './Toolbar'
+import SampleManager from './SampleManager'
 
 firebase.initializeApp(config)
 
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           <Route path='/play' exact render={() => <Touchpad configModeOn={configModeOn}/>} />
           <Route path='/join' exact render={() => <Join />} />
           <Route path='/login' exact render={() => <Login />} />
+          <Route path='/samples' exact render={() => <SampleManager />} />
         </Switch>
         </Router>
       </div>

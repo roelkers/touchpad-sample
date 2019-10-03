@@ -26,3 +26,17 @@ export interface IToolbarProps {
     setConfigModeOn: (on: boolean) => void,
     configModeOn: boolean
 }
+
+export interface IUploadState {
+    file : any,
+    uploading: boolean,
+    status: string,
+    uploadError: string
+}
+
+export type IUploadAction = 
+ | { type: 'load', file: any}
+ | { type: 'submit' }
+ | { type: 'file-uploaded'}
+ | { type: 'set-upload-error', error: string }
+

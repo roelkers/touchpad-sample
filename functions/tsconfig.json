@@ -7,7 +7,6 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2017",
-    "traceResolution": true
   },
   "compileOnSave": true,
   "include": [

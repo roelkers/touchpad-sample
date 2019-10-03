@@ -8,6 +8,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon'
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import PersonIcon from '@material-ui/icons/Person';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import AlbumIcon from '@material-ui/icons/Album';
 import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
@@ -26,6 +27,12 @@ export default function Sidebar(props : ISidebarProps) {
                 <Link to='/play'>
                     <ListItemIcon><PlayArrowIcon /></ListItemIcon>
                     <ListItemText>Play</ListItemText>
+                </Link>
+            </ListItem>
+            <ListItem>
+                <Link to='/samples'>
+                    <ListItemIcon><AlbumIcon /></ListItemIcon>
+                    <ListItemText>Manage Samples</ListItemText>
                 </Link>
             </ListItem>
             <ListItem>
