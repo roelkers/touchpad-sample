@@ -2,27 +2,31 @@ const functions = require('firebase-functions')
 import * as express from 'express'
 const fileParser = require('express-multipart-file-parser')
 const config = require('../../config')
-const admin = require("firebase-admin");
+const  { Storage } = require('@google-cloud/storage')
+const cors = require('cors')
+//const firebase = require('firebase')
 
 const app = express()
 
 const serviceAccount = require(`../../config/${config.fireBasePrivateKeyPath}`);
 
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    storageBucket: config.firebaseStorageBucketURL
+const storage = new Storage({
+    credentials: serviceAccount,
   });
 
-const bucket = admin.storage().bucket();
+const bucket = storage.bucket(config.firebaseStorageBucketURL);
+
 // add admin to ther request params to get into controller zone
+
+app.use(cors({origin: true}))
 
 app.use(fileParser)
 
 // URL /upload
-app.post("/upload", (req, res) => {
+app.post("/upload", (req: any, res) => {
     const files : any  = req.files;
     console.log(req.files)
-    console.log(req.file)
+    console.info(req)
     if(!files) {
       res.status(500);
       res.json('file not found');
@@ -34,7 +38,7 @@ app.post("/upload", (req, res) => {
   fileUpload.save(new Buffer(files[0].buffer)).then(  
       (result : any) => {
         res.status(200);
-        res.json('file uploaded successfully');
+        res.json({ error: 'file uploaded successfully'});
       },
       (error: any) => {
         res.status(500);
@@ -43,5 +47,23 @@ app.post("/upload", (req, res) => {
       }
     );
   })
+
+app.get("/files", async (req, res) => {
+  const result = await bucket.getFiles()
+  const files = result[0]
+  const fileNames = files.map((file: any) => file.name)
+  console.log(fileNames)
+  res.json({files: fileNames})
+})
+
+app.delete("files/:id", async (req, res) => {
+  const { id } = req.params
+
+  const file = bucket.file(id)
+  console.log(file)
+  await file.delete().catch(() => 
+    res.status(500).send('could not delete file'))
+  res.send('file deleted')
+})
 
 exports.app = functions.https.onRequest(app)

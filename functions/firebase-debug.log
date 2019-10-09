@@ -1,0 +1,579 @@
+[debug] [2019-10-04T23:03:57.621Z] ----------------------------------------------------------------------
+[debug] [2019-10-04T23:03:57.622Z] Command:       /home/rufus/.nvm/versions/node/v11.10.1/bin/node /home/rufus/.yarn/bin/firebase functions:shell
+[debug] [2019-10-04T23:03:57.623Z] CLI Version:   7.4.0
+[debug] [2019-10-04T23:03:57.623Z] Platform:      linux
+[debug] [2019-10-04T23:03:57.623Z] Node Version:  v11.10.1
+[debug] [2019-10-04T23:03:57.623Z] Time:          Sat Oct 05 2019 01:03:57 GMT+0200 (Central European Summer Time)
+[debug] [2019-10-04T23:03:57.623Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-04T23:03:57.628Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-04T23:03:57.628Z] > authorizing via signed-in user
+[debug] [2019-10-04T23:03:57.628Z] [iam] checking project touchpad-sample for permissions ["firebase.projects.get"]
+[debug] [2019-10-04T23:03:57.629Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/touchpad-sample:testIamPermissions  
+
+[debug] [2019-10-04T23:03:58.589Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "11"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[debug] [2019-10-04T23:03:58.879Z] [functions] Watching "/home/rufus/Dev/touchpad-sample/functions" for Cloud Functions...
+[debug] [2019-10-04T23:03:59.050Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-04T23:03:59.340Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:03:59.341Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:03:59.343Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:03:59.344Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:03:59.346Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:03:59.466Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:03:59.468Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:03:59.469Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:03:59.473Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:03:59.474Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:03:59.475Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:03:59.673Z] [functions[app]] http function initialized (http://localhost:5000/touchpad-sample/us-central1/app).
+[info] i  functions: Loaded functions: app
+[debug] [2019-10-04T23:03:59.767Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:03:59.767Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:03:59.767Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:03:59.773Z] {"socketPath":"/tmp/firebase_emulator_invocation_6504.sock"}
+[debug] [2019-10-04T23:03:59.773Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6504.sock"}
+[debug] [2019-10-04T23:03:59.778Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:03:59.784Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-04T23:04:00.419Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-04T23:04:45.423Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-04T23:04:45.758Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:04:45.760Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:04:45.760Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:04:45.763Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:04:45.764Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:04:45.767Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:04:46.130Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:04:46.131Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:04:46.131Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:04:46.158Z] {"socketPath":"/tmp/firebase_emulator_invocation_6563.sock"}
+[debug] [2019-10-04T23:04:46.159Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6563.sock"}
+[debug] [2019-10-04T23:04:46.174Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:04:46.184Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-04T23:04:56.657Z] [functions] Finished "app" in ~10s
+[debug] [2019-10-04T23:05:29.753Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-04T23:05:30.103Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:05:30.103Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:05:30.104Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:05:30.107Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:05:30.107Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:05:30.107Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:05:30.413Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:05:30.413Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:05:30.413Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:05:30.420Z] {"socketPath":"/tmp/firebase_emulator_invocation_6676.sock"}
+[debug] [2019-10-04T23:05:30.421Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6676.sock"}
+[debug] [2019-10-04T23:05:30.427Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:05:30.433Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[debug] [2019-10-04T23:05:40.616Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-04T23:05:40.982Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:05:40.983Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:05:40.983Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:05:40.988Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:05:40.988Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:05:40.988Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-04T23:05:41.033Z] [functions] Finished "app" in ~10s
+[debug] [2019-10-04T23:05:41.303Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:05:41.303Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:05:41.304Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:05:41.317Z] {"socketPath":"/tmp/firebase_emulator_invocation_6718.sock"}
+[debug] [2019-10-04T23:05:41.318Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6718.sock"}
+[debug] [2019-10-04T23:05:41.328Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:05:41.338Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[debug] [2019-10-04T23:05:44.787Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-04T23:05:45.048Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:05:45.051Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:05:45.051Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:05:45.054Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:05:45.054Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:05:45.055Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:05:45.358Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:05:45.359Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:05:45.359Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:05:45.367Z] {"socketPath":"/tmp/firebase_emulator_invocation_6738.sock"}
+[debug] [2019-10-04T23:05:45.367Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6738.sock"}
+[debug] [2019-10-04T23:05:45.375Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:05:45.381Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[debug] [2019-10-04T23:05:49.868Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-04T23:05:50.151Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:05:50.152Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:05:50.152Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:05:50.155Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:05:50.155Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:05:50.156Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:05:50.386Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:05:50.386Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:05:50.386Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:05:50.392Z] {"socketPath":"/tmp/firebase_emulator_invocation_6760.sock"}
+[debug] [2019-10-04T23:05:50.392Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6760.sock"}
+[debug] [2019-10-04T23:05:50.398Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:05:50.403Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-04T23:05:50.982Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-04T23:05:50.987Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-04T23:05:51.242Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:05:51.242Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:05:51.243Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:05:51.245Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:05:51.246Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:05:51.247Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:05:51.477Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:05:51.478Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:05:51.478Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:05:51.484Z] {"socketPath":"/tmp/firebase_emulator_invocation_6774.sock"}
+[debug] [2019-10-04T23:05:51.484Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6774.sock"}
+[debug] [2019-10-04T23:05:51.490Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:05:51.496Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-04T23:05:51.936Z] [functions] Finished "app" in ~10s
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-04T23:05:52.471Z] [functions] Finished "app" in ~1s
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-04T23:05:55.930Z] [functions] Finished "app" in ~10s
+[debug] [2019-10-04T23:06:05.118Z] Accepted request OPTIONS /touchpad-sample/us-central1/app/file/SMD_60_Bb_Oceanic_Piano_Lead_c.wav --> app
+[debug] [2019-10-04T23:06:05.361Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:06:05.364Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:06:05.364Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:06:05.365Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:06:05.366Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:06:05.366Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:06:05.612Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:06:05.612Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:06:05.612Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:06:05.618Z] {"socketPath":"/tmp/firebase_emulator_invocation_6828.sock"}
+[debug] [2019-10-04T23:06:05.618Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6828.sock"}
+[debug] [2019-10-04T23:06:05.624Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:06:05.630Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[debug] [2019-10-04T23:06:05.632Z] Accepted request DELETE /touchpad-sample/us-central1/app/file/SMD_60_Bb_Oceanic_Piano_Lead_c.wav --> app
+[debug] [2019-10-04T23:06:05.635Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-04T23:06:05.845Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:06:05.847Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:06:05.847Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:06:05.848Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:06:05.848Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:06:05.849Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:06:06.064Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:06:06.065Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:06:06.065Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:06:06.070Z] {"socketPath":"/tmp/firebase_emulator_invocation_6836.sock"}
+[debug] [2019-10-04T23:06:06.071Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6836.sock"}
+[debug] [2019-10-04T23:06:06.078Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:06:06.085Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[debug] [2019-10-04T23:06:06.086Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-04T23:06:15.443Z] Accepted request OPTIONS /touchpad-sample/us-central1/app/file/SMD_60_Bb_Oceanic_Piano_Lead_c.wav --> app
+[debug] [2019-10-04T23:06:15.734Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:06:15.735Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:06:15.735Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:06:15.737Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:06:15.738Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:06:15.738Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:06:15.987Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:06:15.988Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:06:15.988Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:06:15.995Z] {"socketPath":"/tmp/firebase_emulator_invocation_6850.sock"}
+[debug] [2019-10-04T23:06:15.995Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6850.sock"}
+[debug] [2019-10-04T23:06:16.001Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:06:16.008Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[debug] [2019-10-04T23:06:16.010Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-04T23:06:16.011Z] Accepted request DELETE /touchpad-sample/us-central1/app/file/SMD_60_Bb_Oceanic_Piano_Lead_c.wav --> app
+[debug] [2019-10-04T23:06:16.262Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:06:16.263Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:06:16.263Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:06:16.265Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:06:16.267Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:06:16.267Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:06:16.540Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:06:16.540Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:06:16.540Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:06:16.547Z] {"socketPath":"/tmp/firebase_emulator_invocation_6859.sock"}
+[debug] [2019-10-04T23:06:16.548Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6859.sock"}
+[debug] [2019-10-04T23:06:16.553Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:06:16.562Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[debug] [2019-10-04T23:06:16.565Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-04T23:06:16.745Z] Accepted request DELETE /touchpad-sample/us-central1/app/file/SMD_60_Bb_Oceanic_Piano_Lead_c.wav --> app
+[debug] [2019-10-04T23:06:16.995Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-04T23:06:16.997Z] [functions] Beginning execution of "app"
+[debug] [2019-10-04T23:06:16.997Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-04T23:06:16.999Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-04T23:06:16.999Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:06:17.001Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-04T23:06:17.260Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-04T23:06:17.260Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-04T23:06:17.260Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-04T23:06:17.268Z] {"socketPath":"/tmp/firebase_emulator_invocation_6867.sock"}
+[debug] [2019-10-04T23:06:17.268Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_6867.sock"}
+[debug] [2019-10-04T23:06:17.274Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-04T23:06:17.283Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[debug] [2019-10-04T23:06:17.285Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:21:17.398Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:21:17.670Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:21:17.671Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:21:17.671Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:21:17.673Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:21:17.673Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:21:17.674Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:21:17.903Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:21:17.903Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:21:17.903Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:21:17.909Z] {"socketPath":"/tmp/firebase_emulator_invocation_1794.sock"}
+[debug] [2019-10-06T11:21:17.910Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_1794.sock"}
+[debug] [2019-10-06T11:21:17.915Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:21:17.920Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:21:18.487Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:21:22.256Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:21:22.721Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:21:22.723Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:21:22.723Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:21:22.727Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:21:22.730Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:21:22.731Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:21:23.078Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:21:23.079Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:21:23.079Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:21:23.085Z] {"socketPath":"/tmp/firebase_emulator_invocation_1820.sock"}
+[debug] [2019-10-06T11:21:23.085Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_1820.sock"}
+[debug] [2019-10-06T11:21:23.091Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:21:23.096Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[debug] [2019-10-06T11:21:29.269Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:21:29.618Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:21:29.619Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:21:29.619Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:21:29.621Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:21:29.622Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:21:29.624Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:21:29.858Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:21:29.859Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:21:29.859Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:21:29.864Z] {"socketPath":"/tmp/firebase_emulator_invocation_1876.sock"}
+[debug] [2019-10-06T11:21:29.864Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_1876.sock"}
+[debug] [2019-10-06T11:21:29.869Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:21:29.875Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:21:30.383Z] [functions] Finished "app" in ~1s
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:21:33.664Z] [functions] Finished "app" in ~10s
+[debug] [2019-10-06T11:21:43.221Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:21:43.506Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:21:43.507Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:21:43.508Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:21:43.512Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:21:43.512Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:21:43.512Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:21:43.767Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:21:43.767Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:21:43.768Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:21:43.773Z] {"socketPath":"/tmp/firebase_emulator_invocation_1919.sock"}
+[debug] [2019-10-06T11:21:43.773Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_1919.sock"}
+[debug] [2019-10-06T11:21:43.779Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:21:43.784Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:21:44.331Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:22:20.941Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:22:21.222Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:22:21.224Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:22:21.224Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:22:21.227Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:22:21.227Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:22:21.227Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:22:21.514Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:22:21.514Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:22:21.514Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:22:21.520Z] {"socketPath":"/tmp/firebase_emulator_invocation_2050.sock"}
+[debug] [2019-10-06T11:22:21.520Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2050.sock"}
+[debug] [2019-10-06T11:22:21.525Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:22:21.530Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:22:21.984Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:22:24.779Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:22:25.163Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:22:25.164Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:22:25.164Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:22:25.167Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:22:25.168Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:22:25.169Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:22:25.428Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:22:25.429Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:22:25.429Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:22:25.435Z] {"socketPath":"/tmp/firebase_emulator_invocation_2091.sock"}
+[debug] [2019-10-06T11:22:25.435Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2091.sock"}
+[debug] [2019-10-06T11:22:25.441Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:22:25.446Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:22:25.943Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:22:29.570Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:22:29.801Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:22:29.801Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:22:29.802Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:22:29.804Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:22:29.807Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:22:29.807Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:22:30.076Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:22:30.076Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:22:30.076Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:22:30.085Z] {"socketPath":"/tmp/firebase_emulator_invocation_2143.sock"}
+[debug] [2019-10-06T11:22:30.085Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2143.sock"}
+[debug] [2019-10-06T11:22:30.093Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:22:30.103Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:22:30.613Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:22:38.775Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:22:39.116Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:22:39.117Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:22:39.117Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:22:39.120Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:22:39.121Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:22:39.122Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:22:39.350Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:22:39.350Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:22:39.350Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:22:39.356Z] {"socketPath":"/tmp/firebase_emulator_invocation_2237.sock"}
+[debug] [2019-10-06T11:22:39.356Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2237.sock"}
+[debug] [2019-10-06T11:22:39.362Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:22:39.367Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:22:39.875Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:23:25.988Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:23:26.236Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:23:26.238Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:23:26.238Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:23:26.239Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:23:26.240Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:23:26.240Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:23:26.547Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:23:26.547Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:23:26.547Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:23:26.554Z] {"socketPath":"/tmp/firebase_emulator_invocation_2325.sock"}
+[debug] [2019-10-06T11:23:26.554Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2325.sock"}
+[debug] [2019-10-06T11:23:26.561Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:23:26.567Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:23:27.126Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:24:31.104Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:24:31.418Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:24:31.419Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:24:31.419Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:24:31.421Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:24:31.421Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:24:31.425Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:24:31.662Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:24:31.662Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:24:31.663Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:24:31.669Z] {"socketPath":"/tmp/firebase_emulator_invocation_2395.sock"}
+[debug] [2019-10-06T11:24:31.669Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2395.sock"}
+[debug] [2019-10-06T11:24:31.674Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:24:31.680Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:24:32.749Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:25:50.397Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:25:50.718Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:25:50.719Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:25:50.719Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:25:50.722Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:25:50.723Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:25:50.725Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:25:50.984Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:25:50.984Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:25:50.985Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:25:50.990Z] {"socketPath":"/tmp/firebase_emulator_invocation_2550.sock"}
+[debug] [2019-10-06T11:25:50.990Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2550.sock"}
+[debug] [2019-10-06T11:25:50.995Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:25:51.000Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:25:51.573Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:26:32.908Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:26:33.145Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:26:33.147Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:26:33.147Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:26:33.150Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:26:33.150Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:26:33.151Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:26:33.381Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:26:33.381Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:26:33.381Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:26:33.387Z] {"socketPath":"/tmp/firebase_emulator_invocation_2603.sock"}
+[debug] [2019-10-06T11:26:33.387Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2603.sock"}
+[debug] [2019-10-06T11:26:33.393Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:26:33.398Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:26:34.013Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:27:17.512Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:27:17.798Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:27:17.800Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:27:17.800Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:27:17.802Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:27:17.802Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:27:17.803Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:27:18.071Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:27:18.071Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:27:18.071Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:27:18.076Z] {"socketPath":"/tmp/firebase_emulator_invocation_2752.sock"}
+[debug] [2019-10-06T11:27:18.076Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2752.sock"}
+[debug] [2019-10-06T11:27:18.081Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:27:18.086Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:27:18.641Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:27:21.129Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:27:21.468Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:27:21.470Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:27:21.470Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:27:21.473Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:27:21.476Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:27:21.476Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:27:21.781Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:27:21.781Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:27:21.781Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:27:21.788Z] {"socketPath":"/tmp/firebase_emulator_invocation_2769.sock"}
+[debug] [2019-10-06T11:27:21.788Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2769.sock"}
+[debug] [2019-10-06T11:27:21.796Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:27:21.804Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:27:22.390Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:27:33.057Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:27:33.388Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:27:33.389Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:27:33.389Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:27:33.391Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:27:33.392Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:27:33.393Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:27:33.698Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:27:33.698Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:27:33.698Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:27:33.704Z] {"socketPath":"/tmp/firebase_emulator_invocation_2804.sock"}
+[debug] [2019-10-06T11:27:33.705Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2804.sock"}
+[debug] [2019-10-06T11:27:33.711Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:27:33.716Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:27:34.222Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:27:35.789Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:27:36.160Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:27:36.161Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:27:36.161Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:27:36.165Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:27:36.165Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:27:36.166Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:27:36.403Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:27:36.403Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:27:36.403Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:27:36.410Z] {"socketPath":"/tmp/firebase_emulator_invocation_2829.sock"}
+[debug] [2019-10-06T11:27:36.410Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2829.sock"}
+[debug] [2019-10-06T11:27:36.417Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:27:36.423Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:27:36.925Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:27:52.721Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:27:53.038Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:27:53.040Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:27:53.041Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:27:53.044Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:27:53.045Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:27:53.045Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:27:53.310Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:27:53.310Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:27:53.310Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:27:53.315Z] {"socketPath":"/tmp/firebase_emulator_invocation_2865.sock"}
+[debug] [2019-10-06T11:27:53.316Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2865.sock"}
+[debug] [2019-10-06T11:27:53.321Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:27:53.325Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:27:53.916Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T11:28:39.428Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T11:28:39.861Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T11:28:39.864Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T11:28:39.864Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T11:28:39.866Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T11:28:39.868Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:28:39.871Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T11:28:40.195Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T11:28:40.195Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T11:28:40.195Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T11:28:40.204Z] {"socketPath":"/tmp/firebase_emulator_invocation_2957.sock"}
+[debug] [2019-10-06T11:28:40.205Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_2957.sock"}
+[debug] [2019-10-06T11:28:40.212Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T11:28:40.220Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T11:28:40.863Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T16:20:06.635Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T16:20:06.974Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T16:20:06.975Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T16:20:06.975Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T16:20:06.978Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T16:20:06.979Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T16:20:06.981Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T16:20:07.257Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T16:20:07.257Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T16:20:07.257Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T16:20:07.263Z] {"socketPath":"/tmp/firebase_emulator_invocation_3504.sock"}
+[debug] [2019-10-06T16:20:07.264Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_3504.sock"}
+[debug] [2019-10-06T16:20:07.269Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T16:20:07.274Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T16:20:07.735Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T16:20:09.322Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T16:20:09.671Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T16:20:09.674Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T16:20:09.674Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T16:20:09.676Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T16:20:09.677Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T16:20:09.679Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T16:20:10.105Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T16:20:10.105Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T16:20:10.105Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T16:20:10.116Z] {"socketPath":"/tmp/firebase_emulator_invocation_3519.sock"}
+[debug] [2019-10-06T16:20:10.117Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_3519.sock"}
+[debug] [2019-10-06T16:20:10.125Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T16:20:10.133Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T16:20:10.617Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T16:20:13.039Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T16:20:13.568Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T16:20:13.569Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T16:20:13.570Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T16:20:13.573Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T16:20:13.574Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T16:20:13.575Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T16:20:13.955Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T16:20:13.955Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T16:20:13.955Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T16:20:13.965Z] {"socketPath":"/tmp/firebase_emulator_invocation_3550.sock"}
+[debug] [2019-10-06T16:20:13.965Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_3550.sock"}
+[debug] [2019-10-06T16:20:13.975Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T16:20:13.984Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T16:20:14.476Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T16:20:16.148Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T16:20:16.484Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T16:20:16.485Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T16:20:16.485Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T16:20:16.489Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T16:20:16.492Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T16:20:16.492Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T16:20:16.795Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T16:20:16.795Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T16:20:16.795Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T16:20:16.803Z] {"socketPath":"/tmp/firebase_emulator_invocation_3576.sock"}
+[debug] [2019-10-06T16:20:16.804Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_3576.sock"}
+[debug] [2019-10-06T16:20:16.813Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T16:20:16.822Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T16:20:17.290Z] [functions] Finished "app" in ~1s
+[debug] [2019-10-06T16:20:21.891Z] Accepted request GET /touchpad-sample/us-central1/app/files --> app
+[debug] [2019-10-06T16:20:22.129Z] DEBUG: [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[debug] [2019-10-06T16:20:22.130Z] [functions] Beginning execution of "app"
+[debug] [2019-10-06T16:20:22.131Z] DEBUG: [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-06T16:20:22.133Z] DEBUG: [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-06T16:20:22.134Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T16:20:22.134Z] DEBUG: [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-06T16:20:22.430Z] DEBUG: [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-10-06T16:20:22.430Z] DEBUG: [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-10-06T16:20:22.430Z] DEBUG: [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-10-06T16:20:22.438Z] {"socketPath":"/tmp/firebase_emulator_invocation_3601.sock"}
+[debug] [2019-10-06T16:20:22.438Z] DEBUG: [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_3601.sock"}
+[debug] [2019-10-06T16:20:22.444Z] DEBUG: [runtime-status] Ephemeral server used! {}
+[debug] [2019-10-06T16:20:22.449Z] DEBUG: [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'SMD_60_Bb_Oceanic_Piano_Lead_c.wav', 'bright_pad.wav' ]
+[debug] [2019-10-06T16:20:22.943Z] [functions] Finished "app" in ~1s

@@ -10,6 +10,6 @@
   },
   "compileOnSave": true,
   "include": [
-    "src", "src/express.d.ts", "index.ts"
+    "src", "src/express.d.ts", "src/index.ts"
   ]
 }

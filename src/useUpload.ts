@@ -1,8 +1,8 @@
-import { useCallback, useEffect, useReducer, useRef } from 'react'
+import { useCallback, useEffect, useReducer } from 'react'
 import { IUploadState, IUploadAction } from './interfaces'
+import client from './client'
 
 // Constants
-const UPLOAD_ROUTE = 'http://localhost:5000/touchpad-sample/us-central1/app/upload'
 const LOADED = 'LOADED'
 const INIT = 'INIT'
 const FILES_UPLOADED = 'FILES_UPLOADED'
@@ -16,10 +16,10 @@ const initialState = {
   }
 
 const uploadFile = (file : any) => {
-    return fetch(UPLOAD_ROUTE, {
-        method: 'PUT',
-        body: file.file
-    })    
+
+    const formData = new FormData()
+    formData.append('files', file.files[0])
+    return client.uploadFile(formData)
 }
 
 const reducer = (state: IUploadState, action: IUploadAction) => {
@@ -31,7 +31,7 @@ const reducer = (state: IUploadState, action: IUploadAction) => {
       case 'file-uploaded':
         return { ...state, uploading: false, status: FILES_UPLOADED }
       case 'set-upload-error':
-        return { ...state, uploadError: action.error, status: UPLOAD_ERROR }
+        return { ...state, uploading: false, uploadError: action.error, status: UPLOAD_ERROR }
       default:
         return state
     }
@@ -42,6 +42,7 @@ const useUpload = () => {
 
     const onSubmit = useCallback(
         (e) => {
+            console.log("submit")
           e.preventDefault()
           if (state.file) {
             dispatch({ type: 'submit' })
@@ -53,23 +54,23 @@ const useUpload = () => {
       )
     
       const onChange = (e : any) => {
-        const file = e.target.file
-        if (file) {
-          const src = window.URL.createObjectURL(file)
-          dispatch({ type: 'load', file: {file, src} })
+        const files = e.target.files
+
+        if (files) {
+          const arrFiles = Array.from(e.target.files)
+          const src = window.URL.createObjectURL(arrFiles[0])
+          dispatch({ type: 'load', file: {files, src} })
         }
       }
 
-    // Processes the next pending thumbnail when ready
+    
     useEffect(() => {
-        if (state.uploading === false && state.status === INIT) {
- 
+        if (state.uploading === true && state.status === INIT) {
             uploadFile(state.file)
             .then(() => {
                 dispatch({ type: 'file-uploaded' })
             })
             .catch((error) => {
-                console.error(error)
                 dispatch({ type: 'set-upload-error', error })
             })
         }
