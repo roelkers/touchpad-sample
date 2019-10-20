@@ -10,8 +10,8 @@ import SoundFieldSettings from './SoundFieldSettings'
 type ISoundField = ISoundFieldIntrinsicProps & ITouchpadProps
 
 const SoundField = (props : ISoundField) => {
-    const { classes, configModeOn } = props
-    const [audioContext, setAudioContext] = useState<AudioContext>(new AudioContext())
+    const { classes, configModeOn, audioContext } = props
+
     const [audioBuffer, setAudioBuffer] = useState<AudioBuffer | null >(null)
     const [soundEvent, setSoundEvent] = useState<SoundEvent | null> (null)
     const touchpadElem = useRef<HTMLDivElement>(null)
@@ -28,7 +28,7 @@ const SoundField = (props : ISoundField) => {
                 audioContext.decodeAudioData( request.response, function(buffer) { 
                     console.log("set buffer")
                     setAudioBuffer(buffer)
-                    setSoundEvent(new SoundEvent( audioContext, buffer))
+                    setSoundEvent(new SoundEvent( audioContext, buffer, touchpadElem))
                     console.log( "Sound ready." );
                 }, function(error) {
                     console.error(error)
@@ -72,7 +72,7 @@ const SoundField = (props : ISoundField) => {
                 map((pmEvent : any) => {
                     
                     if(soundEvent) soundEvent.setFilter(pmEvent.center.x, pmEvent.center.y)
-                    console.log(pmEvent)
+                    //console.log(pmEvent)
                     console.log(pmEvent.center.x)
                     console.log(pmEvent.center.y)
                 }),

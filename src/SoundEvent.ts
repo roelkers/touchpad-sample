@@ -1,3 +1,5 @@
+import React from 'react'
+
 class SoundEvent {
     x: any;
     y: any;
@@ -7,8 +9,9 @@ class SoundEvent {
     sound: AudioBufferSourceNode | null;
     context: AudioContext;
     buffer: AudioBuffer;
+    touchpadElem: React.RefObject<HTMLDivElement>
 
-    constructor( audioContext: AudioContext, audioBuffer: AudioBuffer) {
+    constructor( audioContext: AudioContext, audioBuffer: AudioBuffer, touchpadElem: React.RefObject<HTMLDivElement>) {
         this.x = 0
         this.y = 0
         this.initX = this.x;
@@ -17,19 +20,26 @@ class SoundEvent {
         this.sound = null;
         this.context= audioContext;
         this.buffer= audioBuffer;
+        this.touchpadElem = touchpadElem
     }
 
     setFilter(x: number,y: number) {
-        if(this.filter === null) return
-        var factor = 1.0 - ((y - this.initY) / (document.body.clientHeight - this.initY));
-
+        if(this.filter === null || this.touchpadElem.current === null) return
+        const ref = this.touchpadElem.current
+        // console.log("offset top", ref.offsetTop)
+        // console.log("ref clientHeight", ref.clientHeight)
+        // console.log("y", y)
+        var factor = 1.0 - ((y - ref.offsetTop) / (ref.clientHeight));
+        // console.log("diff y", y - ref.offsetTop)
+        // console.log("factor", factor)
         if (factor < 0)
             factor = 0.0;
         if (factor > 1)
             factor = 1.0;
         var value = Math.pow(2, 13 * factor);
+        console.log("filter", value)
         this.filter.frequency.value = value;
-        this.filter.Q.value = 40 * Math.min(1.0, Math.max(0.0, ((x - this.initX) / (document.body.clientWidth - this.initX))));
+        this.filter.Q.value = 20 * Math.min(1.0, Math.max(0.0, ((x - ref.offsetLeft) / ref.clientWidth)));
     }
 
     setupSound() {

@@ -18,6 +18,7 @@ export const AuthContext = React.createContext<IAuthContext | null>(null);
 
 const App: React.FC = () => {
 
+  const [audioContext, setAudioContext] = useState<AudioContext>(new AudioContext())
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [configModeOn, setConfigModeOn]  = useState(false)
@@ -30,7 +31,7 @@ const App: React.FC = () => {
         <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
         <Toolbar setConfigModeOn={setConfigModeOn} configModeOn={configModeOn} />
         <Switch>
-          <Route path='/play' exact render={() => <Touchpad storage={storage} files={files} configModeOn={configModeOn}/>} />
+          <Route path='/play' exact render={() => <Touchpad audioContext={audioContext} storage={storage} files={files} configModeOn={configModeOn}/>} />
           <Route path='/join' exact render={() => <Join />} />
           <Route path='/login' exact render={() => <Login />} />
           <Route path='/samples' exact render={() => <SampleManager files={files} downloadingFiles={downloading} dispatchGetFiles={dispatchGetFiles} />} />

@@ -3,7 +3,8 @@ import { History, LocationState } from 'history'
 export interface ITouchpadProps {
     configModeOn: boolean,
     files: string[],
-    storage: any
+    storage: any,
+    audioContext: AudioContext
 }
 
 export interface ISoundFieldIntrinsicProps {
