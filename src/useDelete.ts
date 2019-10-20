@@ -1,11 +1,11 @@
 import client from './client'
 //import { useEffect, useState } from 'react'
 
-const useDelete = () => {
+const useDelete = (dispatchGetFiles: () => void) => {
     const handleDelete = (fileName: string) => {
             client.deleteFile(fileName)
             .then((res: any) => {
-                console.log(res)
+                dispatchGetFiles()
             })
     }
     return handleDelete

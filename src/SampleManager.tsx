@@ -1,9 +1,7 @@
 import React from 'react'
 import Container from '@material-ui/core/Container'
 import FormGroup from '@material-ui/core/FormGroup'
-import FormControlLabel from '@material-ui/core/FormLabel'
 import Button from '@material-ui/core/Button';
-import Input from '@material-ui/core/Input';
 import FormControl from '@material-ui/core/FormControl';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Box from '@material-ui/core/Box';
@@ -19,12 +17,12 @@ import { Typography } from '@material-ui/core';
 import AlbumIcon from '@material-ui/icons/Album';
 import Divider from '@material-ui/core/Divider';
 import DeleteIcon from '@material-ui/icons/Delete';
+import { ISampleManagerProps } from './interfaces'
 
 import useUpload from './useUpload'
-import useFilelist from './useFilelist';
 import useDelete from './useDelete'
 
-const SampleManager = () => {
+const SampleManager = (props: ISampleManagerProps) => {
 
     const {
         file,
@@ -33,10 +31,10 @@ const SampleManager = () => {
         onSubmit,
         onChange,
         uploadError
-    } = useUpload()
+    } = useUpload(props.dispatchGetFiles)
 
-    let files = useFilelist()
-    const handleDelete = useDelete()
+    const handleDelete = useDelete(props.dispatchGetFiles)
+
         return (
             <Container maxWidth='sm'>
             <Box mt={10}>
@@ -59,14 +57,15 @@ const SampleManager = () => {
                 </form>
                 </Box>
                 <Box mt={2}>
-                    {uploading && <CircularProgress />}
+                    {uploading && <Box><CircularProgress color='secondary' /><Typography variant='body1'>Uploading...</Typography></Box>}
+                    {props.downloadingFiles && <Box><CircularProgress /><Typography variant='body1'>Fetching Files...</Typography></Box>}
                     {status === 'UPLOADED_ERROR' && <Snackbar open><SnackbarContent><ErrorIcon />{uploadError}</SnackbarContent></Snackbar>}
                     {status === 'FILES_UPLOADED' && <Snackbar open><SnackbarContent><InfoIcon />{uploadError}</SnackbarContent></Snackbar>}
                 </Box>
                 <Box mt={4}>
                     <Typography variant='h4'>Manage Files</Typography>
                     <List>
-                        {files.map((file) => 
+                        {props.files.map((file) => 
                         <React.Fragment>
                             <ListItem key={file}>
                                 <ListItemIcon>

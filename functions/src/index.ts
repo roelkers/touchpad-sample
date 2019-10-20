@@ -56,13 +56,13 @@ app.get("/files", async (req, res) => {
   res.json({files: fileNames})
 })
 
-app.delete("files/:id", async (req, res) => {
+app.delete("/files/:id", async (req, res) => {
   const { id } = req.params
 
   const file = bucket.file(id)
   console.log(file)
   await file.delete().catch(() => 
-    res.status(500).send('could not delete file'))
+    res.status(400).send('could not delete file'))
   res.send('file deleted')
 })
 

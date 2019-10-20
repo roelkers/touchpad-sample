@@ -22,12 +22,13 @@ const client = {
     },
 
     deleteFile: (fileName: string) => {
-        return fetch(`${UPLOAD_ROUTE}/file/${fileName}`, {
+        return fetch(`${UPLOAD_ROUTE}/files/${fileName}`, {
             method: 'DELETE'
         }).then(response => {
             if (!response.ok) {
                 throw new Error(response.statusText)
                 }
+                console.log(response)
             })
             .catch((err) => console.log(err))
     }

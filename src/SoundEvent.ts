@@ -50,6 +50,7 @@ class SoundEvent {
     stopSound() {
         if (this.sound)
             this.sound.stop(0);
+        console.log("stopping source node")
         this.sound = null
     }
 }

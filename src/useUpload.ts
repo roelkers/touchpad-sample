@@ -9,7 +9,7 @@ const FILES_UPLOADED = 'FILES_UPLOADED'
 const UPLOAD_ERROR = 'UPLOAD_ERROR'
 
 const initialState = {
-    file: {},
+    file: null,
     uploading: false,
     status: 'idle',
     uploadError: ''
@@ -37,12 +37,11 @@ const reducer = (state: IUploadState, action: IUploadAction) => {
     }
   }
 
-const useUpload = () => {
+const useUpload = (dispatchGetFiles: () => void) => {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     const onSubmit = useCallback(
         (e) => {
-            console.log("submit")
           e.preventDefault()
           if (state.file) {
             dispatch({ type: 'submit' })
@@ -62,13 +61,13 @@ const useUpload = () => {
           dispatch({ type: 'load', file: {files, src} })
         }
       }
-
     
     useEffect(() => {
         if (state.uploading === true && state.status === INIT) {
             uploadFile(state.file)
             .then(() => {
                 dispatch({ type: 'file-uploaded' })
+                dispatchGetFiles()
             })
             .catch((error) => {
                 dispatch({ type: 'set-upload-error', error })

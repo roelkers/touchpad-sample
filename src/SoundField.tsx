@@ -15,24 +15,29 @@ const SoundField = (props : ISoundField) => {
     const [audioBuffer, setAudioBuffer] = useState<AudioBuffer | null >(null)
     const [soundEvent, setSoundEvent] = useState<SoundEvent | null> (null)
     const touchpadElem = useRef<HTMLDivElement>(null)
+    const [sampleUrl, setSampleUrl] = useState<string>('')
 
     useEffect(() => {
-        
-        var request = new XMLHttpRequest();
-        request.open("GET", "sounds/bright_pad.wav", true);
-        request.responseType = "arraybuffer";
-        request.onload = function() {
-            audioContext.decodeAudioData( request.response, function(buffer) { 
-                setAudioBuffer(buffer)
-                setSoundEvent(new SoundEvent( audioContext, buffer))
-                console.log( "Sound ready." );
-		    }, function(error) {
-                console.error(error)
-            });
-        }
-        if(audioBuffer === null)
-	        request.send();
-    })
+        console.log(sampleUrl)
+        if(sampleUrl !== '')  {
+            var request = new XMLHttpRequest();
+            request.open("GET", sampleUrl, true);
+            request.responseType = "arraybuffer";
+
+            request.onload = function() {
+                audioContext.decodeAudioData( request.response, function(buffer) { 
+                    console.log("set buffer")
+                    setAudioBuffer(buffer)
+                    setSoundEvent(new SoundEvent( audioContext, buffer))
+                    console.log( "Sound ready." );
+                }, function(error) {
+                    console.error(error)
+                });
+            }
+            
+            request.send();
+         }
+    }, [sampleUrl])
 
     useEffect(() => {
         if(audioBuffer === null || soundEvent === null) return
@@ -84,7 +89,7 @@ const SoundField = (props : ISoundField) => {
 
     return (
         <div ref={touchpadElem} className={`soundfield ${classes}`}>
-            {configModeOn && <SoundFieldSettings />}
+            {configModeOn && <SoundFieldSettings storage={props.storage} setSampleUrl={setSampleUrl} files={props.files}/>}
         </div>
     )
 }

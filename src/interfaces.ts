@@ -1,7 +1,9 @@
 import { History, LocationState } from 'history'
 
 export interface ITouchpadProps {
-    configModeOn: boolean
+    configModeOn: boolean,
+    files: string[],
+    storage: any
 }
 
 export interface ISoundFieldIntrinsicProps {
@@ -27,6 +29,18 @@ export interface IToolbarProps {
     configModeOn: boolean
 }
 
+export interface ISampleManagerProps {
+    files: string[],
+    dispatchGetFiles: () => void,
+    downloadingFiles: Boolean
+}
+
+export interface ISoundfieldSettingsProps {
+    files: string[],
+    setSampleUrl: (name: string) => void,
+    storage: any
+}
+
 export interface IUploadState {
     file : any,
     uploading: boolean,
@@ -40,3 +54,14 @@ export type IUploadAction =
  | { type: 'file-uploaded'}
  | { type: 'set-upload-error', error: string }
 
+ export interface IDownloadState {
+    files : string[],
+    status: string,
+    uploadError: string,
+    downloading: Boolean
+}
+
+export type IDownloadAction = 
+ | { type: 'load'}
+ | { type: 'files-downloaded', files: string[]}
+ | { type: 'set-download-error', error: string }
