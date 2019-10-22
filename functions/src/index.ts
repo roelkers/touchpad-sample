@@ -1,14 +1,14 @@
 const functions = require('firebase-functions')
 import * as express from 'express'
 const fileParser = require('express-multipart-file-parser')
-const config = require('../../config')
+const config = require('../config')
 const  { Storage } = require('@google-cloud/storage')
 const cors = require('cors')
 //const firebase = require('firebase')
 
 const app = express()
 
-const serviceAccount = require(`../../config/${config.fireBasePrivateKeyPath}`);
+const serviceAccount = require(`../config/${config.fireBasePrivateKeyPath}`);
 
 const storage = new Storage({
     credentials: serviceAccount,
@@ -16,9 +16,7 @@ const storage = new Storage({
 
 const bucket = storage.bucket(config.firebaseStorageBucketURL);
 
-// add admin to ther request params to get into controller zone
-
-app.use(cors({origin: true}))
+const corsMiddleware = cors({origin: true})
 
 app.use(fileParser)
 
@@ -66,4 +64,8 @@ app.delete("/files/:id", async (req, res) => {
   res.send('file deleted')
 })
 
-exports.app = functions.https.onRequest(app)
+exports.app = functions.https.onRequest((req: any,res: any) => {
+  return corsMiddleware(req, res, () => {
+    app(req,res)
+  })
+})

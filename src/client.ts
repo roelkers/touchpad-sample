@@ -1,23 +1,23 @@
-const UPLOAD_ROUTE = 'http://localhost:5000/touchpad-sample/us-central1/app'
-
+const UPLOAD_ROUTE = process.env.REACT_APP_BACKEND_URL
+console.log(UPLOAD_ROUTE)
 const client = {
 
     uploadFile: (formData: any) => {
         return fetch(`${UPLOAD_ROUTE}/upload`, {
             method: 'POST',
             body: formData
-        })    
+        })
     },
 
-    getFiles: function(): Promise<{ files: [string] }> {
+    getFiles: function (): Promise<{ files: [string] }> {
         return fetch(`${UPLOAD_ROUTE}/files`, {
             method: 'GET'
         }).then(response => {
             if (!response.ok) {
                 throw new Error(response.statusText)
-                }
-                return response.json()
-            })
+            }
+            return response.json()
+        })
             .catch((err) => console.log(err))
     },
 
@@ -27,9 +27,9 @@ const client = {
         }).then(response => {
             if (!response.ok) {
                 throw new Error(response.statusText)
-                }
-                console.log(response)
-            })
+            }
+            console.log(response)
+        })
             .catch((err) => console.log(err))
     }
 }

@@ -66,8 +66,8 @@ const SampleManager = (props: ISampleManagerProps) => {
                     <Typography variant='h4'>Manage Files</Typography>
                     <List>
                         {props.files.map((file) => 
-                        <React.Fragment>
-                            <ListItem key={file}>
+                        <React.Fragment key={file}>
+                            <ListItem >
                                 <ListItemIcon>
                                     <AlbumIcon />
                                 </ListItemIcon>
