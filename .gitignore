@@ -22,6 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/config/firebase.config.js
-/config/touchpad-sample-firebase-adminsdk-zjn9q-b7b9e3730f.json
-/config/config.tar
+/functions/config/firebase.config.js
+/functions/config/touchpad-sample-firebase-adminsdk-zjn9q-b7b9e3730f.json
+/functions/config/config.tar
