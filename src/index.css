@@ -22,6 +22,7 @@ code {
 .soundfield {
   width: 50%;
   height: 50%;
+  touch-action: none;
 }
 
 .soundfield--turquoise {
