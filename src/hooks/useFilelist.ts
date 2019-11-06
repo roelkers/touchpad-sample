@@ -1,6 +1,6 @@
-import client from './client'
+import client from '../client'
 import { useEffect, useReducer } from 'react'
-import { IDownloadState, IDownloadAction } from './interfaces'
+import { IDownloadState, IDownloadAction } from '../interfaces'
 
 // Constants
 const INIT = 'INIT'

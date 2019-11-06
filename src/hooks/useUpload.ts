@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useReducer } from 'react'
-import { IUploadState, IUploadAction } from './interfaces'
-import client from './client'
+import { IUploadState, IUploadAction } from '../interfaces'
+import client from '../client'
 
 // Constants
 const LOADED = 'LOADED'
@@ -73,7 +73,7 @@ const useUpload = (dispatchGetFiles: () => void) => {
                 dispatch({ type: 'set-upload-error', error })
             })
         }
-    }, [state])
+    }, [state, dispatchGetFiles])
 
     return {
         ...state,

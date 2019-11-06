@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { ISoundfieldSettingsProps } from './interfaces'
+import { ISoundfieldSettingsProps } from '../interfaces'
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import NativeSelect from '@material-ui/core/NativeSelect';
@@ -17,7 +17,7 @@ const SoundFieldSettings = (props: ISoundfieldSettingsProps) => {
             .then((url: string) => setSampleUrl(url))
             .catch((err: Error) => console.log(err))
         }
-    },[samplePath])
+    },[samplePath, setSampleUrl, storage])
 
     return (
     <Box justifyContent='center' display='flex' flexDirection='column'>

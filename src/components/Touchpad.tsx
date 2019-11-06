@@ -1,6 +1,6 @@
 import React from 'react';
 import SoundField from './SoundField'
-import { ITouchpadProps } from './interfaces'
+import { ITouchpadProps } from '../interfaces'
 
 const Touchpad = (props: ITouchpadProps) => {
 

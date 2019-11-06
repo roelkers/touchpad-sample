@@ -17,15 +17,14 @@ import { Typography } from '@material-ui/core';
 import AlbumIcon from '@material-ui/icons/Album';
 import Divider from '@material-ui/core/Divider';
 import DeleteIcon from '@material-ui/icons/Delete';
-import { ISampleManagerProps } from './interfaces'
+import { ISampleManagerProps } from '../interfaces'
 
-import useUpload from './useUpload'
-import useDelete from './useDelete'
+import useUpload from '../hooks/useUpload'
+import useDelete from '../hooks/useDelete'
 
 const SampleManager = (props: ISampleManagerProps) => {
 
     const {
-        file,
         status,
         uploading,
         onSubmit,

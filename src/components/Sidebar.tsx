@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import ListItemText from '@material-ui/core/ListItemText';
 import List from '@material-ui/core/List';
@@ -12,7 +11,7 @@ import AlbumIcon from '@material-ui/icons/Album';
 import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
-import { ISidebarProps } from './interfaces'
+import { ISidebarProps } from '../interfaces'
 
 export default function Sidebar(props : ISidebarProps) {
 

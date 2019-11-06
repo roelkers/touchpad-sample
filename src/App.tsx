@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import Touchpad from './Touchpad'
-import Join from './Join'
-import Login from './Login'
+import Touchpad from './components/Touchpad'
+import Join from './components/Join'
+import Login from './components/Login'
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import config from './firebase.config'
 import * as firebase from 'firebase'
 import { IAuthContext } from './interfaces'
-import Sidebar from './Sidebar'
-import Toolbar from './Toolbar'
-import SampleManager from './SampleManager'
-import useFilelist from './useFilelist'
+import Sidebar from './components/Sidebar'
+import Toolbar from './components/Toolbar'
+import SampleManager from './components/SampleManager'
+import useFilelist from './hooks/useFilelist'
 
 firebase.initializeApp(config)
 const storage = firebase.storage()
@@ -18,7 +18,7 @@ export const AuthContext = React.createContext<IAuthContext | null>(null);
 
 const App: React.FC = () => {
 
-  const [audioContext, setAudioContext] = useState<AudioContext>(new AudioContext())
+  const audioContext = new AudioContext()
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [configModeOn, setConfigModeOn]  = useState(false)

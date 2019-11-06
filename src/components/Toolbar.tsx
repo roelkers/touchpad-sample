@@ -1,7 +1,7 @@
 import React from 'react';
 import EditIcon from '@material-ui/icons/Edit'
 import Button from '@material-ui/core/Button'
-import { IToolbarProps } from './interfaces'
+import { IToolbarProps } from '../interfaces'
 
 const Toolbar = (props: IToolbarProps) => {
 

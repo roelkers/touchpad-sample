@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container'
 import TextField from '@material-ui/core/TextField';
-import { AuthContext } from "./App";
+import { AuthContext } from "../App";
 import * as firebase from 'firebase'
 import FormGroup from '@material-ui/core/FormGroup'
 import { RouteComponentProps, withRouter } from "react-router-dom";

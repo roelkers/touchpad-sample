@@ -3,8 +3,8 @@ import Hammer from 'hammerjs'
 import { fromEvent, interval} from 'rxjs'
 import { map, filter, takeUntil, throttle, flatMap, switchMap, tap } from 'rxjs/operators'
 import { JQueryStyleEventEmitter } from 'rxjs/internal/observable/fromEvent';
-import SoundEvent from './SoundEvent'
-import { ISoundFieldIntrinsicProps, ITouchpadProps } from './interfaces'
+import SoundEvent from '../SoundEvent'
+import { ISoundFieldIntrinsicProps, ITouchpadProps } from '../interfaces'
 import SoundFieldSettings from './SoundFieldSettings'
 
 type ISoundField = ISoundFieldIntrinsicProps & ITouchpadProps
@@ -37,7 +37,7 @@ const SoundField = (props : ISoundField) => {
             
             request.send();
          }
-    }, [sampleUrl])
+    }, [sampleUrl, audioContext])
 
     useEffect(() => {
         if(audioBuffer === null || soundEvent === null) return
