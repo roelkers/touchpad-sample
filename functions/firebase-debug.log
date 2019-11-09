@@ -431,3 +431,935 @@
 [info] >    'recorder/Recorder-echo1.wav',
 [info] >    'recorder/Recorder-long3.wav' ]
 [info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:28:48.556Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T13:28:48.808Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:28:48.809Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:28:48.811Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:28:48.812Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:28:48.812Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:28:49.059Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:28:49.059Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:28:49.059Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:28:49.066Z] {"socketPath":"/tmp/firebase_emulator_invocation_15237.sock"}
+[debug] [2019-11-09T13:28:49.066Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_15237.sock"}
+[debug] [2019-11-09T13:28:49.072Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:28:49.077Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~10s
+[debug] [2019-11-09T13:29:23.194Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:29:23.412Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:29:23.413Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:29:23.414Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:29:23.415Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:29:23.415Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:29:23.621Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:29:23.622Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:29:23.622Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:29:23.629Z] {"socketPath":"/tmp/firebase_emulator_invocation_15409.sock"}
+[debug] [2019-11-09T13:29:23.629Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_15409.sock"}
+[debug] [2019-11-09T13:29:23.635Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:29:23.643Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~10s
+[debug] [2019-11-09T13:29:36.028Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T13:29:36.284Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:29:36.285Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:29:36.287Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:29:36.288Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:29:36.288Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:29:36.541Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:29:36.541Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:29:36.541Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:29:36.548Z] {"socketPath":"/tmp/firebase_emulator_invocation_15428.sock"}
+[debug] [2019-11-09T13:29:36.548Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_15428.sock"}
+[debug] [2019-11-09T13:29:36.554Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:29:36.560Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:38:01.460Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:38:01.740Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:38:01.742Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:38:01.744Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:38:01.744Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:38:01.745Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:38:02.007Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:38:02.008Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:38:02.008Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:38:02.014Z] {"socketPath":"/tmp/firebase_emulator_invocation_15924.sock"}
+[debug] [2019-11-09T13:38:02.014Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_15924.sock"}
+[debug] [2019-11-09T13:38:02.020Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:38:02.025Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:38:16.200Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:38:16.518Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:38:16.521Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:38:16.522Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:38:16.523Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:38:16.523Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:38:16.821Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:38:16.822Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:38:16.822Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:38:16.834Z] {"socketPath":"/tmp/firebase_emulator_invocation_15966.sock"}
+[debug] [2019-11-09T13:38:16.835Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_15966.sock"}
+[debug] [2019-11-09T13:38:16.842Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:38:16.850Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:38:43.040Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:38:43.353Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:38:43.354Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:38:43.358Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:38:43.360Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:38:43.361Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:38:43.683Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:38:43.683Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:38:43.683Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:38:43.691Z] {"socketPath":"/tmp/firebase_emulator_invocation_16042.sock"}
+[debug] [2019-11-09T13:38:43.692Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16042.sock"}
+[debug] [2019-11-09T13:38:43.697Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:38:43.702Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:38:52.995Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:38:53.433Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:38:53.435Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:38:53.440Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:38:53.442Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:38:53.443Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:38:53.844Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:38:53.844Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:38:53.844Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:38:53.852Z] {"socketPath":"/tmp/firebase_emulator_invocation_16072.sock"}
+[debug] [2019-11-09T13:38:53.853Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16072.sock"}
+[debug] [2019-11-09T13:38:53.860Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:38:53.867Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:39:03.950Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:39:04.218Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:39:04.219Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:39:04.222Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:39:04.223Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:39:04.224Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:39:04.514Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:39:04.514Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:39:04.514Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:39:04.522Z] {"socketPath":"/tmp/firebase_emulator_invocation_16096.sock"}
+[debug] [2019-11-09T13:39:04.522Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16096.sock"}
+[debug] [2019-11-09T13:39:04.528Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:39:04.533Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:39:09.520Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:39:10.000Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:39:10.005Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:39:10.011Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:39:10.013Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:39:10.023Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:39:10.481Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:39:10.481Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:39:10.481Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:39:10.491Z] {"socketPath":"/tmp/firebase_emulator_invocation_16127.sock"}
+[debug] [2019-11-09T13:39:10.492Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16127.sock"}
+[debug] [2019-11-09T13:39:10.499Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:39:10.507Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:39:16.520Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:39:16.921Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:39:16.923Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:39:16.927Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:39:16.927Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:39:16.929Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:39:17.208Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:39:17.208Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:39:17.208Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:39:17.218Z] {"socketPath":"/tmp/firebase_emulator_invocation_16159.sock"}
+[debug] [2019-11-09T13:39:17.218Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16159.sock"}
+[debug] [2019-11-09T13:39:17.242Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:39:17.252Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:43:47.822Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:43:48.247Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:43:48.248Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:43:48.252Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:43:48.252Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:43:48.253Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:43:48.536Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:43:48.536Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:43:48.536Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:43:48.542Z] {"socketPath":"/tmp/firebase_emulator_invocation_16375.sock"}
+[debug] [2019-11-09T13:43:48.542Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16375.sock"}
+[debug] [2019-11-09T13:43:48.547Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:43:48.551Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-11-09T13:43:54.494Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:43:54.846Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:43:54.847Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:43:54.850Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:43:54.852Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:43:54.852Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:43:55.280Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:43:55.280Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:43:55.280Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:43:55.287Z] {"socketPath":"/tmp/firebase_emulator_invocation_16399.sock"}
+[debug] [2019-11-09T13:43:55.288Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16399.sock"}
+[debug] [2019-11-09T13:43:55.295Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:43:55.301Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~10s
+[info] i  functions: Finished "app" in ~10s
+[debug] [2019-11-09T13:45:49.197Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:45:49.590Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:45:49.593Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:45:49.601Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:45:49.602Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:45:49.606Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:45:49.914Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:45:49.914Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:45:49.914Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:45:49.921Z] {"socketPath":"/tmp/firebase_emulator_invocation_16493.sock"}
+[debug] [2019-11-09T13:45:49.921Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16493.sock"}
+[debug] [2019-11-09T13:45:49.927Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:45:49.933Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:46:12.010Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:46:12.312Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:46:12.314Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:46:12.318Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:46:12.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:46:12.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:46:12.609Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:46:12.609Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:46:12.609Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:46:12.616Z] {"socketPath":"/tmp/firebase_emulator_invocation_16530.sock"}
+[debug] [2019-11-09T13:46:12.616Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16530.sock"}
+[debug] [2019-11-09T13:46:12.622Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:46:12.627Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:46:17.679Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:46:18.118Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:46:18.120Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:46:18.123Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:46:18.125Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:46:18.127Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:46:18.754Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:46:18.754Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:46:18.754Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:46:18.763Z] {"socketPath":"/tmp/firebase_emulator_invocation_16556.sock"}
+[debug] [2019-11-09T13:46:18.763Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16556.sock"}
+[debug] [2019-11-09T13:46:18.770Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:46:18.777Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-11-09T13:46:19.067Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:46:19.372Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:46:19.373Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:46:19.375Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:46:19.376Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:46:19.377Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:46:19.684Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:46:19.684Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:46:19.684Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:46:19.691Z] {"socketPath":"/tmp/firebase_emulator_invocation_16570.sock"}
+[debug] [2019-11-09T13:46:19.691Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16570.sock"}
+[debug] [2019-11-09T13:46:19.699Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:46:19.704Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:46:20.707Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:46:21.036Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:46:21.038Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:46:21.041Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:46:21.043Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:46:21.046Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:46:21.437Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:46:21.437Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:46:21.438Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:46:21.444Z] {"socketPath":"/tmp/firebase_emulator_invocation_16584.sock"}
+[debug] [2019-11-09T13:46:21.444Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16584.sock"}
+[debug] [2019-11-09T13:46:21.449Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:46:21.454Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:52:16.620Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:52:16.935Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:52:16.937Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:52:16.940Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:52:16.941Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:52:16.943Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:52:17.280Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:52:17.280Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:52:17.280Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:52:17.286Z] {"socketPath":"/tmp/firebase_emulator_invocation_16731.sock"}
+[debug] [2019-11-09T13:52:17.286Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16731.sock"}
+[debug] [2019-11-09T13:52:17.294Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:52:17.301Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:52:21.696Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:52:22.341Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:52:22.344Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:52:22.348Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:52:22.350Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:52:22.351Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:52:22.705Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:52:22.705Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:52:22.705Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:52:22.711Z] {"socketPath":"/tmp/firebase_emulator_invocation_16755.sock"}
+[debug] [2019-11-09T13:52:22.712Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16755.sock"}
+[debug] [2019-11-09T13:52:22.717Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:52:22.723Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:52:25.710Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:52:26.098Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:52:26.100Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:52:26.103Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:52:26.106Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:52:26.106Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:52:26.510Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:52:26.510Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:52:26.510Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:52:26.520Z] {"socketPath":"/tmp/firebase_emulator_invocation_16771.sock"}
+[debug] [2019-11-09T13:52:26.520Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16771.sock"}
+[debug] [2019-11-09T13:52:26.528Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:52:26.536Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:52:55.156Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:52:55.542Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:52:55.544Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:52:55.549Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:52:55.550Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:52:55.551Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:52:55.866Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:52:55.866Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:52:55.866Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:52:55.872Z] {"socketPath":"/tmp/firebase_emulator_invocation_16825.sock"}
+[debug] [2019-11-09T13:52:55.872Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16825.sock"}
+[debug] [2019-11-09T13:52:55.878Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:52:55.883Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:55:40.423Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:55:40.774Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:55:40.778Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:55:40.783Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:55:40.785Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:55:40.787Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:55:41.141Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:55:41.141Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:55:41.141Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:55:41.147Z] {"socketPath":"/tmp/firebase_emulator_invocation_16911.sock"}
+[debug] [2019-11-09T13:55:41.147Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16911.sock"}
+[debug] [2019-11-09T13:55:41.153Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:55:41.159Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:55:49.333Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:55:49.765Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:55:49.767Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:55:49.771Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:55:49.772Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:55:49.774Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:55:50.046Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:55:50.046Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:55:50.046Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:55:50.053Z] {"socketPath":"/tmp/firebase_emulator_invocation_16935.sock"}
+[debug] [2019-11-09T13:55:50.053Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16935.sock"}
+[debug] [2019-11-09T13:55:50.059Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:55:50.064Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:55:54.082Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:55:54.503Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:55:54.505Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:55:54.507Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:55:54.508Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:55:54.509Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:55:54.811Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:55:54.811Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:55:54.811Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:55:54.819Z] {"socketPath":"/tmp/firebase_emulator_invocation_16959.sock"}
+[debug] [2019-11-09T13:55:54.819Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16959.sock"}
+[debug] [2019-11-09T13:55:54.825Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:55:54.830Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:55:59.059Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:55:59.487Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:55:59.488Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:55:59.489Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:55:59.490Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:55:59.491Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:55:59.797Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:55:59.797Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:55:59.797Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:55:59.807Z] {"socketPath":"/tmp/firebase_emulator_invocation_16980.sock"}
+[debug] [2019-11-09T13:55:59.807Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_16980.sock"}
+[debug] [2019-11-09T13:55:59.813Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:55:59.819Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:56:12.530Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:56:12.996Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:56:12.999Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:56:13.001Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:56:13.002Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:56:13.002Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:56:13.446Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:56:13.446Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:56:13.446Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:56:13.460Z] {"socketPath":"/tmp/firebase_emulator_invocation_17019.sock"}
+[debug] [2019-11-09T13:56:13.461Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17019.sock"}
+[debug] [2019-11-09T13:56:13.473Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:56:13.483Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:56:23.487Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:56:23.793Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:56:23.795Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:56:23.800Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:56:23.802Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:56:23.804Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:56:24.052Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:56:24.052Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:56:24.052Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:56:24.058Z] {"socketPath":"/tmp/firebase_emulator_invocation_17051.sock"}
+[debug] [2019-11-09T13:56:24.058Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17051.sock"}
+[debug] [2019-11-09T13:56:24.064Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:56:24.069Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:56:29.326Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:56:29.703Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:56:29.704Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:56:29.709Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:56:29.710Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:56:29.711Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:56:30.021Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:56:30.021Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:56:30.021Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:56:30.028Z] {"socketPath":"/tmp/firebase_emulator_invocation_17077.sock"}
+[debug] [2019-11-09T13:56:30.029Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17077.sock"}
+[debug] [2019-11-09T13:56:30.034Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:56:30.041Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:57:01.152Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:57:01.510Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:57:01.512Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:57:01.517Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:57:01.519Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:57:01.519Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:57:01.872Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:57:01.872Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:57:01.872Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:57:01.883Z] {"socketPath":"/tmp/firebase_emulator_invocation_17121.sock"}
+[debug] [2019-11-09T13:57:01.883Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17121.sock"}
+[debug] [2019-11-09T13:57:01.893Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:57:01.902Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:57:28.496Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:57:28.854Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:57:28.857Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:57:28.858Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:57:28.859Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:57:28.860Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:57:29.227Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:57:29.227Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:57:29.227Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:57:29.233Z] {"socketPath":"/tmp/firebase_emulator_invocation_17158.sock"}
+[debug] [2019-11-09T13:57:29.233Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17158.sock"}
+[debug] [2019-11-09T13:57:29.239Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:57:29.246Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:58:01.629Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T13:58:01.914Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:58:01.915Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:58:01.917Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:58:01.918Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:58:01.919Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:58:02.257Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:58:02.257Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:58:02.257Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:58:02.265Z] {"socketPath":"/tmp/firebase_emulator_invocation_17187.sock"}
+[debug] [2019-11-09T13:58:02.265Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17187.sock"}
+[debug] [2019-11-09T13:58:02.271Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:58:02.276Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:58:32.446Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:58:32.810Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:58:32.813Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:58:32.815Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:58:32.816Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:58:32.817Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:58:33.132Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:58:33.132Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:58:33.132Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:58:33.138Z] {"socketPath":"/tmp/firebase_emulator_invocation_17217.sock"}
+[debug] [2019-11-09T13:58:33.138Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17217.sock"}
+[debug] [2019-11-09T13:58:33.143Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:58:33.148Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:58:50.521Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T13:58:50.808Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:58:50.809Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:58:50.811Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:58:50.812Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:58:50.812Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:58:51.099Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:58:51.099Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:58:51.099Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:58:51.106Z] {"socketPath":"/tmp/firebase_emulator_invocation_17243.sock"}
+[debug] [2019-11-09T13:58:51.107Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17243.sock"}
+[debug] [2019-11-09T13:58:51.115Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:58:51.122Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T13:59:36.594Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T13:59:36.901Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T13:59:36.902Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T13:59:36.904Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T13:59:36.904Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:59:36.906Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T13:59:37.282Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T13:59:37.282Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T13:59:37.282Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T13:59:37.305Z] {"socketPath":"/tmp/firebase_emulator_invocation_17274.sock"}
+[debug] [2019-11-09T13:59:37.306Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17274.sock"}
+[debug] [2019-11-09T13:59:37.317Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T13:59:37.326Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:01:05.866Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:01:06.395Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:01:06.398Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:01:06.405Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:01:06.407Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:01:06.409Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:01:06.703Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:01:06.703Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:01:06.703Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:01:06.711Z] {"socketPath":"/tmp/firebase_emulator_invocation_17345.sock"}
+[debug] [2019-11-09T14:01:06.712Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17345.sock"}
+[debug] [2019-11-09T14:01:06.719Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:01:06.726Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:01:47.957Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:01:48.374Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:01:48.376Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:01:48.378Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:01:48.378Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:01:48.381Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:01:48.789Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:01:48.790Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:01:48.790Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:01:48.800Z] {"socketPath":"/tmp/firebase_emulator_invocation_17399.sock"}
+[debug] [2019-11-09T14:01:48.801Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17399.sock"}
+[debug] [2019-11-09T14:01:48.810Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:01:48.819Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:01:54.894Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:01:55.176Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:01:55.177Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:01:55.179Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:01:55.180Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:01:55.180Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:01:55.618Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:01:55.618Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:01:55.618Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:01:55.625Z] {"socketPath":"/tmp/firebase_emulator_invocation_17425.sock"}
+[debug] [2019-11-09T14:01:55.625Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17425.sock"}
+[debug] [2019-11-09T14:01:55.632Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:01:55.640Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:02:00.365Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T14:02:00.701Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:02:00.702Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:02:00.704Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:02:00.704Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:02:00.705Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:02:00.971Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:02:00.971Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:02:00.971Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:02:00.979Z] {"socketPath":"/tmp/firebase_emulator_invocation_17448.sock"}
+[debug] [2019-11-09T14:02:00.979Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17448.sock"}
+[debug] [2019-11-09T14:02:00.986Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:02:00.992Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:03:03.668Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:03:03.988Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:03:03.995Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:03:03.998Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:03:03.999Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:03:04.000Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:03:04.275Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:03:04.275Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:03:04.275Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:03:04.281Z] {"socketPath":"/tmp/firebase_emulator_invocation_17479.sock"}
+[debug] [2019-11-09T14:03:04.281Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17479.sock"}
+[debug] [2019-11-09T14:03:04.286Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:03:04.291Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:03:11.154Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:03:11.466Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:03:11.467Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:03:11.469Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:03:11.470Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:03:11.471Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:03:11.919Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:03:11.919Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:03:11.920Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:03:11.926Z] {"socketPath":"/tmp/firebase_emulator_invocation_17503.sock"}
+[debug] [2019-11-09T14:03:11.926Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17503.sock"}
+[debug] [2019-11-09T14:03:11.937Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:03:11.944Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:03:13.068Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:03:13.560Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:03:13.563Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:03:13.567Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:03:13.569Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:03:13.570Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:03:13.848Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:03:13.848Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:03:13.848Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:03:13.855Z] {"socketPath":"/tmp/firebase_emulator_invocation_17527.sock"}
+[debug] [2019-11-09T14:03:13.855Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17527.sock"}
+[debug] [2019-11-09T14:03:13.862Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:03:13.867Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:03:20.992Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:03:21.339Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:03:21.342Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:03:21.343Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:03:21.344Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:03:21.345Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:03:21.686Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:03:21.686Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:03:21.686Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:03:21.693Z] {"socketPath":"/tmp/firebase_emulator_invocation_17551.sock"}
+[debug] [2019-11-09T14:03:21.693Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17551.sock"}
+[debug] [2019-11-09T14:03:21.698Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:03:21.704Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:03:27.530Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T14:03:27.776Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:03:27.778Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:03:27.780Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:03:27.781Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:03:27.783Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:03:28.115Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:03:28.115Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:03:28.115Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:03:28.123Z] {"socketPath":"/tmp/firebase_emulator_invocation_17574.sock"}
+[debug] [2019-11-09T14:03:28.123Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17574.sock"}
+[debug] [2019-11-09T14:03:28.129Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:03:28.135Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:04:09.202Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T14:04:09.487Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:04:09.489Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:04:09.491Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:04:09.492Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:04:09.493Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:04:09.752Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:04:09.752Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:04:09.752Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:04:09.757Z] {"socketPath":"/tmp/firebase_emulator_invocation_17592.sock"}
+[debug] [2019-11-09T14:04:09.757Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17592.sock"}
+[debug] [2019-11-09T14:04:09.761Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:04:09.765Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-11-09T14:04:10.110Z] Accepted request GET /touchpad-sample/us-central1/app/folders/recorder/files --> app
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:04:10.416Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:04:10.417Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:04:10.419Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:04:10.420Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:04:10.421Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:04:10.691Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:04:10.691Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:04:10.691Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:04:10.700Z] {"socketPath":"/tmp/firebase_emulator_invocation_17603.sock"}
+[debug] [2019-11-09T14:04:10.701Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17603.sock"}
+[debug] [2019-11-09T14:04:10.708Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:04:10.715Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'recorder/',
+[info] >    'recorder/Recorder-echo1.wav',
+[info] >    'recorder/Recorder-long3.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:06:24.193Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:06:24.494Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:06:24.496Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:06:24.498Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:06:24.499Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:06:24.500Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:06:24.788Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:06:24.788Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:06:24.788Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:06:24.794Z] {"socketPath":"/tmp/firebase_emulator_invocation_17702.sock"}
+[debug] [2019-11-09T14:06:24.794Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17702.sock"}
+[debug] [2019-11-09T14:06:24.799Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:06:24.804Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:06:30.404Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T14:06:30.650Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:06:30.651Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:06:30.652Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:06:30.653Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:06:30.654Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:06:30.863Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:06:30.864Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:06:30.865Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:06:30.887Z] {"socketPath":"/tmp/firebase_emulator_invocation_17718.sock"}
+[debug] [2019-11-09T14:06:30.887Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17718.sock"}
+[debug] [2019-11-09T14:06:30.895Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:06:30.900Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:06:34.582Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T14:06:34.848Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:06:34.848Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:06:34.851Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:06:34.851Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:06:34.852Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:06:35.116Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:06:35.116Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:06:35.116Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:06:35.125Z] {"socketPath":"/tmp/firebase_emulator_invocation_17730.sock"}
+[debug] [2019-11-09T14:06:35.125Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17730.sock"}
+[debug] [2019-11-09T14:06:35.131Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:06:35.138Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:06:37.095Z] Accepted request GET /touchpad-sample/us-central1/app/folders/recorder/files --> app
+[debug] [2019-11-09T14:06:37.324Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:06:37.325Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:06:37.327Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:06:37.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:06:37.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:06:37.517Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:06:37.517Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:06:37.517Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:06:37.522Z] {"socketPath":"/tmp/firebase_emulator_invocation_17741.sock"}
+[debug] [2019-11-09T14:06:37.522Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17741.sock"}
+[debug] [2019-11-09T14:06:37.526Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:06:37.531Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'recorder/',
+[info] >    'recorder/Recorder-echo1.wav',
+[info] >    'recorder/Recorder-long3.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:10:11.541Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:10:11.841Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:10:11.844Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:10:11.846Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:10:11.848Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:10:11.849Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:10:12.080Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:10:12.080Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:10:12.081Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:10:12.087Z] {"socketPath":"/tmp/firebase_emulator_invocation_17843.sock"}
+[debug] [2019-11-09T14:10:12.088Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17843.sock"}
+[debug] [2019-11-09T14:10:12.093Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:10:12.098Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:10:48.558Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:10:48.959Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:10:48.960Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:10:48.962Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:10:48.963Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:10:48.964Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:10:49.368Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:10:49.368Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:10:49.368Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:10:49.377Z] {"socketPath":"/tmp/firebase_emulator_invocation_17881.sock"}
+[debug] [2019-11-09T14:10:49.377Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17881.sock"}
+[debug] [2019-11-09T14:10:49.385Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:10:49.392Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:10:54.133Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:10:54.479Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:10:54.480Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:10:54.482Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:10:54.483Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:10:54.483Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:10:54.676Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:10:54.677Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:10:54.677Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:10:54.682Z] {"socketPath":"/tmp/firebase_emulator_invocation_17914.sock"}
+[debug] [2019-11-09T14:10:54.682Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17914.sock"}
+[debug] [2019-11-09T14:10:54.687Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:10:54.691Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:11:00.099Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:11:00.559Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:11:00.561Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:11:00.565Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:11:00.567Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:11:00.567Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:11:01.029Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:11:01.029Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:11:01.030Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:11:01.036Z] {"socketPath":"/tmp/firebase_emulator_invocation_17936.sock"}
+[debug] [2019-11-09T14:11:01.037Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17936.sock"}
+[debug] [2019-11-09T14:11:01.042Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:11:01.048Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:11:09.591Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T14:11:09.860Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:11:09.861Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:11:09.863Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:11:09.864Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:11:09.865Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:11:10.085Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:11:10.086Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:11:10.086Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:11:10.091Z] {"socketPath":"/tmp/firebase_emulator_invocation_17989.sock"}
+[debug] [2019-11-09T14:11:10.091Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_17989.sock"}
+[debug] [2019-11-09T14:11:10.096Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:11:10.101Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:11:57.041Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:11:57.326Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:11:57.327Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:11:57.329Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:11:57.330Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:11:57.330Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:11:57.693Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:11:57.693Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:11:57.693Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:11:57.701Z] {"socketPath":"/tmp/firebase_emulator_invocation_18035.sock"}
+[debug] [2019-11-09T14:11:57.701Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_18035.sock"}
+[debug] [2019-11-09T14:11:57.708Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:11:57.714Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~10s
+[debug] [2019-11-09T14:12:42.211Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:12:42.560Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:12:42.562Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:12:42.564Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:12:42.564Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:12:42.565Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:12:42.884Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:12:42.884Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:12:42.885Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:12:42.891Z] {"socketPath":"/tmp/firebase_emulator_invocation_18116.sock"}
+[debug] [2019-11-09T14:12:42.891Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_18116.sock"}
+[debug] [2019-11-09T14:12:42.897Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:12:42.902Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~10s
+[debug] [2019-11-09T14:13:09.417Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:13:09.767Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:13:09.770Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:13:09.773Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:13:09.774Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:13:09.775Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:13:10.024Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:13:10.024Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:13:10.024Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:13:10.030Z] {"socketPath":"/tmp/firebase_emulator_invocation_18163.sock"}
+[debug] [2019-11-09T14:13:10.030Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_18163.sock"}
+[debug] [2019-11-09T14:13:10.035Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:13:10.040Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~10s
+[debug] [2019-11-09T14:14:07.273Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:14:07.807Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:14:07.811Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:14:07.816Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:14:07.817Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:14:07.817Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:14:08.340Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:14:08.340Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:14:08.340Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:14:08.349Z] {"socketPath":"/tmp/firebase_emulator_invocation_18258.sock"}
+[debug] [2019-11-09T14:14:08.349Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_18258.sock"}
+[debug] [2019-11-09T14:14:08.361Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:14:08.371Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:16:07.416Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:16:07.803Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:16:07.806Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:16:07.810Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:16:07.811Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:16:07.812Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:16:08.078Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:16:08.079Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:16:08.079Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:16:08.085Z] {"socketPath":"/tmp/firebase_emulator_invocation_18641.sock"}
+[debug] [2019-11-09T14:16:08.085Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_18641.sock"}
+[debug] [2019-11-09T14:16:08.091Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:16:08.097Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:16:31.417Z] Accepted request GET /touchpad-sample/us-central1/app/folders --> app
+[debug] [2019-11-09T14:16:31.716Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:16:31.719Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:16:31.721Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:16:31.722Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:16:31.723Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:16:31.935Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:16:31.935Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:16:31.935Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:16:31.941Z] {"socketPath":"/tmp/firebase_emulator_invocation_18789.sock"}
+[debug] [2019-11-09T14:16:31.941Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_18789.sock"}
+[debug] [2019-11-09T14:16:31.946Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:16:31.951Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-11-09T14:16:59.968Z] Accepted request GET /touchpad-sample/us-central1/app/folders/synth/files --> app
+[debug] [2019-11-09T14:17:00.370Z] [runtime-status] Functions runtime initialized. {"cwd":"/home/rufus/Dev/touchpad-sample/functions","node_version":"11.10.1"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-11-09T14:17:00.371Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-09T14:17:00.372Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-09T14:17:00.373Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:17:00.374Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/home/rufus/Dev/touchpad-sample/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-09T14:17:00.571Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-11-09T14:17:00.571Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-11-09T14:17:00.572Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-11-09T14:17:00.577Z] {"socketPath":"/tmp/firebase_emulator_invocation_18859.sock"}
+[debug] [2019-11-09T14:17:00.577Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_18859.sock"}
+[debug] [2019-11-09T14:17:00.582Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-11-09T14:17:00.586Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'synth/', 'synth/SIG_126_D_Classic_Bass.wav' ]
+[info] i  functions: Finished "app" in ~1s

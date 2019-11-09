@@ -16,7 +16,6 @@ const SoundField = (props : ISoundField) => {
     const [soundEvent, setSoundEvent] = useState<SoundEvent | null> (null)
     const touchpadElem = useRef<HTMLDivElement>(null)
     const [sampleUrl, setSampleUrl] = useState<string>('')
-
     
     useEffect(() => {
         if(sampleUrl !== '')  {
@@ -42,15 +41,18 @@ const SoundField = (props : ISoundField) => {
     useEffect(() => {
         if(audioBuffer === null || soundEvent === null) return
 
-        const hammerManager = new Hammer(touchpadElem.current as HTMLDivElement, undefined)
-        hammerManager.get('pan').set({ direction: Hammer.DIRECTION_ALL})
+        const hammerManager = new Hammer.Manager(touchpadElem.current as HTMLDivElement, undefined)
+        hammerManager.add( new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, pointers: 0, threshold: 0}))
 
         const pan = fromEvent(hammerManager as unknown as JQueryStyleEventEmitter, 'panstart panmove panend')
-        // const panMove = fromEvent(hammerManager, 'panmove')  
         
-        const onEnd = () => {
-            console.log("End. Stopping Sound.")
-            soundEvent.stopSound()
+        const onEnd = (pmEvent : any) => {
+            console.log(pmEvent)
+            //stop sound event if only one finger is still being used
+            if(pmEvent.maxPointers === 1) {
+                console.log("End. Stopping Sound.")
+                soundEvent.stopSound()
+            }
         }
 
         const panStart = pan.pipe(
@@ -61,20 +63,23 @@ const SoundField = (props : ISoundField) => {
             filter((e : any) => e.type === 'panend'),
             map(onEnd)
         ) 
-
+        
         const move = panStart.pipe(switchMap((e) => {
             e.preventDefault()
 
-            soundEvent.setupSound()
+            if(!soundEvent.sound)
+                soundEvent.setupSound()
             // Create observable to handle pan-move and stop on pan-end
             return panMove.pipe(
                 //throttle(ev => interval(100)),
                 map((pmEvent : any) => {
-                    
+                    // console.log(pmEvent)
+                    // console.log(pmEvent.pointers[0])
+                    // console.log(pmEvent.pointers[1])
                     if(soundEvent) soundEvent.setFilter(pmEvent.center.x, pmEvent.center.y)
                     //console.log(pmEvent)
-                    console.log(pmEvent.center.x)
-                    console.log(pmEvent.center.y)
+                    // console.log(pmEvent.center.x)
+                    // console.log(pmEvent.center.y)
                 }),
                 takeUntil(panEnd)
                 )

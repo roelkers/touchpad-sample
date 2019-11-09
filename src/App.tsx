@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, } from 'react';
 import Touchpad from './components/Touchpad'
 import Join from './components/Join'
 import Login from './components/Login'
@@ -19,11 +19,17 @@ export const AuthContext = React.createContext<IAuthContext | null>(null);
 
 const App: React.FC = () => {
 
-  const audioContext = new AudioContext()
+  console.log("rerender app")
+  
+  const [audioContext,setAudioContext] = useState(new AudioContext())
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [configModeOn, setConfigModeOn]  = useState(false)
   const { folders, downloadingFolders, dispatchGetFolders } = useFolders()
+
+  // useEffect(()=>{
+  //   setAudioContext(new AudioContext())
+  // })
 
   return (
     <AuthContext.Provider value={{ isLoggedIn, setLoggedIn }}>
