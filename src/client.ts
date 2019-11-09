@@ -9,8 +9,8 @@ const client = {
         })
     },
 
-    getFiles: function (): Promise<{ files: [string] }> {
-        return fetch(`${UPLOAD_ROUTE}/files`, {
+    getFiles: function (folder: string): Promise<{ files: [string] }> {
+        return fetch(`${UPLOAD_ROUTE}/folders/${folder}files`, {
             method: 'GET'
         }).then(response => {
             if (!response.ok) {
@@ -18,7 +18,19 @@ const client = {
             }
             return response.json()
         })
-            .catch((err) => console.log(err))
+        .catch((err) => console.log(err))
+    },
+
+    getFolders: function (): Promise<{ folders: [string] }> {
+        return fetch(`${UPLOAD_ROUTE}/folders`, {
+            method: 'GET'
+        }).then(response => {
+            if (!response.ok) {
+                throw new Error(response.statusText)
+            }
+            return response.json()
+        })
+        .catch((err) => console.log(err))
     },
 
     deleteFile: (fileName: string) => {

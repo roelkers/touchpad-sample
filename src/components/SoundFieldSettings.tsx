@@ -3,33 +3,48 @@ import { ISoundfieldSettingsProps } from '../interfaces'
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import NativeSelect from '@material-ui/core/NativeSelect';
+import useFilelist from '../hooks/useFilelist'
 
 const SoundFieldSettings = (props: ISoundfieldSettingsProps) => {
-    const [samplePath, setSamplePath] = useState<string>('')
-    const { files, setSampleUrl, storage } = props
+    const { folders, setSampleUrl, storage } = props
+    const [sampleName, setSampleName] = useState<string>('')
+    const [selectedFolder, setFolder] = useState('')
+    const { files, downloading, dispatchGetFiles } = useFilelist()
 
     useEffect(() => {
-        if(samplePath !== '') {
-            console.log(samplePath)
+        if(sampleName !== '') {
             const storageRef = storage.ref()
             
-            storageRef.child(samplePath).getDownloadURL()
+            storageRef.child(sampleName).getDownloadURL()
             .then((url: string) => setSampleUrl(url))
             .catch((err: Error) => console.log(err))
         }
-    },[samplePath, setSampleUrl, storage])
+    },[sampleName, setSampleUrl, storage])
+
+
+    useEffect(() => {
+        dispatchGetFiles(selectedFolder)()
+    }, [selectedFolder])
+
 
     return (
     <Box justifyContent='center' display='flex' flexDirection='column'>
         <Typography variant='h4'>Settings</Typography>
         <NativeSelect
-            value={samplePath}
+            value={selectedFolder}
             onChange={(event: any) => {
-                console.log(event.target.value)
-                setSamplePath(event.target.value)
+                setFolder(event.target.value)
             }}
         >
-            {files.map((file) => <option value={file}>{file}</option>)}
+            {folders.map((folder) => <option key={folder} value={folder}>{folder}</option>)}
+        </NativeSelect>
+        <NativeSelect
+            value={sampleName}
+            onChange={(event: any) => {
+                setSampleName(event.target.value)
+            }}
+        >
+            {files.map((file) => <option key={file} value={file}>{file}</option>)}
         </NativeSelect>
     </Box>)
 

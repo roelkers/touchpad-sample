@@ -2,7 +2,7 @@ import { History, LocationState } from 'history'
 
 export interface ITouchpadProps {
     configModeOn: boolean,
-    files: string[],
+    folders: string[],
     storage: any,
     audioContext: AudioContext
 }
@@ -31,13 +31,11 @@ export interface IToolbarProps {
 }
 
 export interface ISampleManagerProps {
-    files: string[],
-    dispatchGetFiles: () => void,
-    downloadingFiles: Boolean
+    folders: string[],
 }
 
 export interface ISoundfieldSettingsProps {
-    files: string[],
+    folders: string[],
     setSampleUrl: (name: string) => void,
     storage: any
 }
@@ -57,12 +55,25 @@ export type IUploadAction =
 
  export interface IDownloadState {
     files : string[],
+    folder: string,
     status: string,
     uploadError: string,
     downloading: Boolean
 }
 
 export type IDownloadAction = 
- | { type: 'load'}
+ | { type: 'load', folder: string}
  | { type: 'files-downloaded', files: string[]}
+ | { type: 'set-download-error', error: string }
+
+ export interface IDownloadFoldersState {
+    folders : string[],
+    status: string,
+    uploadError: string,
+    downloadingFolders: Boolean
+}
+
+export type IDownloadFoldersAction = 
+ | { type: 'load'}
+ | { type: 'folders-downloaded', folders: string[]}
  | { type: 'set-download-error', error: string }

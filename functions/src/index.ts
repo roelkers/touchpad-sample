@@ -23,14 +23,14 @@ app.use(fileParser)
 // URL /upload
 app.post("/upload", (req: any, res) => {
     const files : any  = req.files;
-    console.log(req.files)
-    console.info(req)
+    const folder = req.body.folder
+    console.log(req.folder)
     if(!files) {
       res.status(500);
       res.json('file not found');
       return;
     }
-    const fileUpload = bucket.file(files[0].originalname);
+    const fileUpload = bucket.file(`${folder}${files[0].originalname}`);
 
   // Get File from request Form data.
   fileUpload.save(new Buffer(files[0].buffer)).then(  
@@ -53,6 +53,29 @@ app.get("/files", async (req, res) => {
   console.log(fileNames)
   res.json({files: fileNames})
 })
+
+app.get("/folders", (req, res) => {
+   bucket.getFiles({
+    autoPaginate: false,
+    delimiter: '/', 
+  }, function(err:any, files:any, nextQuery:any, apiResponse:any) {
+    res.json({folders: apiResponse.prefixes})
+  })
+})
+
+app.get("/folders/:prefix/files", async (req, res) => {
+  const { prefix } = req.params
+  const result = await bucket.getFiles({
+    autoPaginate: false,
+    delimiter: '/',
+    prefix: `${prefix}/`
+   })
+   const files = result[0]
+   const fileNames = files.map((file: any) => file.name)
+   console.log(fileNames)
+   res.json({files: fileNames})
+})
+
 
 app.delete("/files/:id", async (req, res) => {
   const { id } = req.params

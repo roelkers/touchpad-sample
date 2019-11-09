@@ -17,8 +17,8 @@ const SoundField = (props : ISoundField) => {
     const touchpadElem = useRef<HTMLDivElement>(null)
     const [sampleUrl, setSampleUrl] = useState<string>('')
 
+    
     useEffect(() => {
-        console.log(sampleUrl)
         if(sampleUrl !== '')  {
             var request = new XMLHttpRequest();
             request.open("GET", sampleUrl, true);
@@ -89,7 +89,7 @@ const SoundField = (props : ISoundField) => {
 
     return (
         <div ref={touchpadElem} className={`soundfield ${classes}`}>
-            {configModeOn && <SoundFieldSettings storage={props.storage} setSampleUrl={setSampleUrl} files={props.files}/>}
+            {configModeOn && <SoundFieldSettings storage={props.storage} setSampleUrl={setSampleUrl} folders={props.folders}/>}
         </div>
     )
 }

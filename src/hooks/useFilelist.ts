@@ -9,6 +9,7 @@ const DOWNLOAD_ERROR = 'UPLOAD_ERROR'
 
 const initialState = {
     files: [],
+    folder: '',
     downloading: false,
     status: INIT,
     uploadError: ''
@@ -17,7 +18,7 @@ const initialState = {
 const reducer = (state: IDownloadState, action: IDownloadAction) => {
     switch (action.type) {
         case 'load':
-          return { ...state, downloading: true, status: INIT }
+          return { ...state, downloading: true, status: INIT, folder: action.folder }
         case 'files-downloaded':
           return { ...state, downloading: false, status: FILES_DOWNLOADED, files: action.files }
         case 'set-download-error':
@@ -27,14 +28,15 @@ const reducer = (state: IDownloadState, action: IDownloadAction) => {
       }
     }
 
-const useFilelist = () => {
+const useFilelist = (prefix = '') => {
     const [state, dispatch] = useReducer(reducer, initialState)
     
-    const dispatchGetFiles = () => dispatch({ type: 'load'})
+    const dispatchGetFiles = (prefix: string) => () => dispatch({ type: 'load', folder: prefix})
 
     useEffect(() => {
-      if (state.status === INIT) {
-        client.getFiles()
+      if (state.status === INIT && state.folder !== '') {
+        console.log(state.folder)
+        client.getFiles(state.folder)
         .then((filelist) => {
           dispatch({ type: 'files-downloaded', files: filelist.files })
         })

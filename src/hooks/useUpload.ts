@@ -15,10 +15,11 @@ const initialState = {
     uploadError: ''
   }
 
-const uploadFile = (file : any) => {
+const uploadFile = (file : any, folder: string) => {
 
     const formData = new FormData()
     formData.append('files', file.files[0])
+    formData.append('folder', folder)
     return client.uploadFile(formData)
 }
 
@@ -37,7 +38,7 @@ const reducer = (state: IUploadState, action: IUploadAction) => {
     }
   }
 
-const useUpload = (dispatchGetFiles: () => void) => {
+const useUpload = (dispatchGetFiles: () => void, folder: string) => {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     const onSubmit = useCallback(
@@ -64,7 +65,7 @@ const useUpload = (dispatchGetFiles: () => void) => {
     
     useEffect(() => {
         if (state.uploading === true && state.status === INIT) {
-            uploadFile(state.file)
+            uploadFile(state.file, folder)
             .then(() => {
                 dispatch({ type: 'file-uploaded' })
                 dispatchGetFiles()
