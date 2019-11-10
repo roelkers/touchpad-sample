@@ -4,9 +4,10 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import useFilelist from '../hooks/useFilelist'
+import AudioGraph from './AudioGraph'
 
 const SoundFieldSettings = (props: ISoundfieldSettingsProps) => {
-    const { folders, setSampleUrl, storage } = props
+    const { folders, setSampleUrl, storage, setEffect } = props
     const [sampleName, setSampleName] = useState<string>('')
     const [selectedFolder, setFolder] = useState('')
     const { files, downloading, dispatchGetFiles } = useFilelist()
@@ -14,7 +15,6 @@ const SoundFieldSettings = (props: ISoundfieldSettingsProps) => {
     useEffect(() => {
         if(sampleName !== '') {
             const storageRef = storage.ref()
-            
             storageRef.child(sampleName).getDownloadURL()
             .then((url: string) => setSampleUrl(url))
             .catch((err: Error) => console.log(err))
@@ -46,6 +46,9 @@ const SoundFieldSettings = (props: ISoundfieldSettingsProps) => {
         >
             {files.map((file) => <option key={file} value={file}>{file}</option>)}
         </NativeSelect>
+        <Box mt='5'>
+            <AudioGraph setEffect={setEffect}/>
+        </Box>    
     </Box>)
 
 }

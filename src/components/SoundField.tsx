@@ -16,6 +16,7 @@ const SoundField = (props : ISoundField) => {
     const [soundEvent, setSoundEvent] = useState<SoundEvent | null> (null)
     const touchpadElem = useRef<HTMLDivElement>(null)
     const [sampleUrl, setSampleUrl] = useState<string>('')
+    const [effect, setEffect] = useState('filter')
     
     useEffect(() => {
         if(sampleUrl !== '')  {
@@ -68,7 +69,7 @@ const SoundField = (props : ISoundField) => {
             e.preventDefault()
 
             if(!soundEvent.sound)
-                soundEvent.setupSound()
+                soundEvent.setupSound(effect)
             // Create observable to handle pan-move and stop on pan-end
             return panMove.pipe(
                 //throttle(ev => interval(100)),
@@ -76,7 +77,8 @@ const SoundField = (props : ISoundField) => {
                     // console.log(pmEvent)
                     // console.log(pmEvent.pointers[0])
                     // console.log(pmEvent.pointers[1])
-                    if(soundEvent) soundEvent.setFilter(pmEvent.center.x, pmEvent.center.y)
+                    console.log(soundEvent)
+                    if(soundEvent) soundEvent.setEffect(pmEvent.center.x, pmEvent.center.y)
                     //console.log(pmEvent)
                     // console.log(pmEvent.center.x)
                     // console.log(pmEvent.center.y)
@@ -92,9 +94,14 @@ const SoundField = (props : ISoundField) => {
         )
     })
 
+    useEffect(() => {
+        if(soundEvent === null) return 
+        soundEvent.stopSound()
+    },[effect])
+
     return (
         <div ref={touchpadElem} className={`soundfield ${classes}`}>
-            {configModeOn && <SoundFieldSettings storage={props.storage} setSampleUrl={setSampleUrl} folders={props.folders}/>}
+            {configModeOn && <SoundFieldSettings setEffect={setEffect} storage={props.storage} setSampleUrl={setSampleUrl} folders={props.folders}/>}
         </div>
     )
 }

@@ -37,7 +37,8 @@ export interface ISampleManagerProps {
 export interface ISoundfieldSettingsProps {
     folders: string[],
     setSampleUrl: (name: string) => void,
-    storage: any
+    storage: any,
+    setEffect: (effect: string) => void
 }
 
 export interface IUploadState {
@@ -77,3 +78,12 @@ export type IDownloadFoldersAction =
  | { type: 'load'}
  | { type: 'folders-downloaded', folders: string[]}
  | { type: 'set-download-error', error: string }
+
+ export interface IGraphNode {
+     label: string,
+     icon: string
+ }
+
+ export interface IAudioGraphProps {
+     setEffect: (effect: string) => void
+ }

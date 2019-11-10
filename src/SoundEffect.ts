@@ -1,9 +1,7 @@
-class SoundEffect {
+interface SoundEffect {
     audioNode : AudioNode
 
-    constructor() {
-        this.audioNode = new AudioNode
-    }
+    setEffect(x: number, y: number) : void
 }
 
 export default SoundEffect
