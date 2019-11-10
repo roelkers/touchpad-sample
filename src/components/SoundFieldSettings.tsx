@@ -7,7 +7,7 @@ import useFilelist from '../hooks/useFilelist'
 import AudioGraph from './AudioGraph'
 
 const SoundFieldSettings = (props: ISoundfieldSettingsProps) => {
-    const { folders, setSampleUrl, storage, setEffect } = props
+    const { folders, setSampleUrl, storage, setAudioGraph, audioGraph } = props
     const [sampleName, setSampleName] = useState<string>('')
     const [selectedFolder, setFolder] = useState('')
     const { files, downloading, dispatchGetFiles } = useFilelist()
@@ -47,7 +47,7 @@ const SoundFieldSettings = (props: ISoundfieldSettingsProps) => {
             {files.map((file) => <option key={file} value={file}>{file}</option>)}
         </NativeSelect>
         <Box mt='5'>
-            <AudioGraph setEffect={setEffect}/>
+            <AudioGraph audioGraph={audioGraph} setAudioGraph={setAudioGraph}/>
         </Box>    
     </Box>)
 

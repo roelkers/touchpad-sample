@@ -6,6 +6,7 @@ import { JQueryStyleEventEmitter } from 'rxjs/internal/observable/fromEvent';
 import SoundEvent from '../SoundEvent'
 import { ISoundFieldIntrinsicProps, ITouchpadProps } from '../interfaces'
 import SoundFieldSettings from './SoundFieldSettings'
+import { initialNodes } from '../constants'
 
 type ISoundField = ISoundFieldIntrinsicProps & ITouchpadProps
 
@@ -16,7 +17,7 @@ const SoundField = (props : ISoundField) => {
     const [soundEvent, setSoundEvent] = useState<SoundEvent | null> (null)
     const touchpadElem = useRef<HTMLDivElement>(null)
     const [sampleUrl, setSampleUrl] = useState<string>('')
-    const [effect, setEffect] = useState('filter')
+    const [audioGraph, setAudioGraph] = useState(initialNodes)
     
     useEffect(() => {
         if(sampleUrl !== '')  {
@@ -69,7 +70,7 @@ const SoundField = (props : ISoundField) => {
             e.preventDefault()
 
             if(!soundEvent.sound)
-                soundEvent.setupSound(effect)
+                soundEvent.setupSound(audioGraph)
             // Create observable to handle pan-move and stop on pan-end
             return panMove.pipe(
                 //throttle(ev => interval(100)),
@@ -77,7 +78,7 @@ const SoundField = (props : ISoundField) => {
                     // console.log(pmEvent)
                     // console.log(pmEvent.pointers[0])
                     // console.log(pmEvent.pointers[1])
-                    console.log(soundEvent)
+                    //console.log(soundEvent)
                     if(soundEvent) soundEvent.setEffect(pmEvent.center.x, pmEvent.center.y)
                     //console.log(pmEvent)
                     // console.log(pmEvent.center.x)
@@ -97,11 +98,11 @@ const SoundField = (props : ISoundField) => {
     useEffect(() => {
         if(soundEvent === null) return 
         soundEvent.stopSound()
-    },[effect])
+    },[audioGraph])
 
     return (
         <div ref={touchpadElem} className={`soundfield ${classes}`}>
-            {configModeOn && <SoundFieldSettings setEffect={setEffect} storage={props.storage} setSampleUrl={setSampleUrl} folders={props.folders}/>}
+            {configModeOn && <SoundFieldSettings audioGraph={audioGraph} setAudioGraph={setAudioGraph} storage={props.storage} setSampleUrl={setSampleUrl} folders={props.folders}/>}
         </div>
     )
 }

@@ -1,5 +1,10 @@
 import { History, LocationState } from 'history'
 
+export interface IAppProps {
+    storage: any,
+    audioContext: AudioContext
+}
+
 export interface ITouchpadProps {
     configModeOn: boolean,
     folders: string[],
@@ -38,7 +43,8 @@ export interface ISoundfieldSettingsProps {
     folders: string[],
     setSampleUrl: (name: string) => void,
     storage: any,
-    setEffect: (effect: string) => void
+    setAudioGraph: (nodes: IGraphNode[]) => void,
+    audioGraph: IGraphNode[]
 }
 
 export interface IUploadState {
@@ -81,9 +87,19 @@ export type IDownloadFoldersAction =
 
  export interface IGraphNode {
      label: string,
-     icon: string
+     icon: string,
+     type: string,
+     name: string
  }
 
  export interface IAudioGraphProps {
-     setEffect: (effect: string) => void
+    setAudioGraph: (nodes: IGraphNode[]) => void
+    audioGraph: IGraphNode[]
  }
+
+ export interface MyStepIconProps {
+     nodes: IGraphNode[]
+ }
+
+ export type effectType = 
+    'filter' | 'delay'

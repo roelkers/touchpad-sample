@@ -28,11 +28,11 @@ class DelayEffect implements SoundEffect {
             factor = 0.0;
         if (factor > 1)
             factor = 1 ;
-        console.log("feedbackGain", factor)
+        //console.log("feedbackGain", factor)
         this.feedbackNode.gain.value = factor;
         const delayTime = 5 * Math.min(1.0, Math.max(0.0, ((x - ref.offsetLeft) / ref.clientWidth)));
         this.audioNode.delayTime.value = delayTime
-        console.log("delayTime", delayTime)
+        //console.log("delayTime", delayTime)
     }
 
 }

@@ -2,13 +2,15 @@ import React from 'react'
 import FilterEffect from './FilterEffect'
 import DelayEffect from './DelayEffect'
 import SoundEffect from './SoundEffect'
+import { IGraphNode, effectType } from './interfaces'
+import { effectTypes } from './constants';
 
 class SoundEvent {
     x: any;
     y: any;
     initX: any;
     initY: any;
-    effect: SoundEffect | null;
+    effects: SoundEffect[] | null;
     sound: AudioBufferSourceNode | null;
     context: AudioContext;
     buffer: AudioBuffer;
@@ -19,7 +21,7 @@ class SoundEvent {
         this.y = 0
         this.initX = this.x;
         this.initY = this.y;
-        this.effect = null
+        this.effects = null
         this.sound = null;
         this.context= audioContext;
         this.buffer= audioBuffer;
@@ -27,34 +29,49 @@ class SoundEvent {
     }
 
     setEffect(x: number, y: number) {
-        if(this.effect === null) return
-        this.effect.setEffect(x,y)
+        if(this.effects === null) return
+        for(let effect of this.effects) {
+            console.log(effect)
+            effect.setEffect(x,y)
+        }
     }
 
-    setupSound(effect: string) {
+    setupSound(audioGraph: IGraphNode[]) {
 
         var sourceNode = this.context.createBufferSource();
         sourceNode.buffer = this.buffer;
         sourceNode.loop = true;
-        console.log(effect)
-        if(effect === 'none' || effect === '' || !effect) {
-            sourceNode.connect(this.context.destination);
-        }
-        else {
-            if(effect === 'filter') {
-                console.log("SETTING FILTER")
-                this.effect = new FilterEffect(this.context, this.touchpadElem)
+        this.effects = new Array<SoundEffect>()
+        let lastNode: AudioNode = sourceNode
+        console.log(audioGraph)
+        for(let node of audioGraph) { 
+            if (node.type === 'effect') {
+                const effectName = node.name
+                console.log(effectName)
+                let effect
+                if(effectName === 'none' || effectName === '' || !effectName) {
+                    //do nothing
+                }
+                else {
+                    if(effectName === 'filter') {
+                        console.log("set up filter")
+                        effect = new FilterEffect(this.context, this.touchpadElem)
+                    }
+                    if(effectName === 'delay') {
+                        console.log("set up delay")
+                        effect = new DelayEffect(this.context, this.touchpadElem)
+                    }
+                    if(!effect || !this.effects) return;
+                    console.log("connect effect")
+                    this.effects.push(effect)
+                    const effectNode = effect.audioNode
+                    lastNode.connect(effectNode);
+                    lastNode = effectNode
+                    console.log(lastNode)
+                }
             }
-            if(effect === 'delay') {
-                this.effect = new DelayEffect(this.context, this.touchpadElem)
-            }
-            if(this.effect === null) return;
-            const effectNode = this.effect.audioNode
-            sourceNode.connect(effectNode);
-            effectNode.connect(this.context.destination);
         }
-
-
+        lastNode.connect(this.context.destination);
         this.sound = sourceNode;
 
         console.log("starting sound")

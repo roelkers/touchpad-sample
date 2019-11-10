@@ -1,23 +1,17 @@
 import React, { useState, } from 'react';
-import Touchpad from './components/Touchpad'
-import Join from './components/Join'
-import Login from './components/Login'
+import Touchpad from './Touchpad'
+import Join from './Join'
+import Login from './Login'
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
-import config from './firebase.config'
-import * as firebase from 'firebase'
-import { IAuthContext } from './interfaces'
-import Sidebar from './components/Sidebar'
-import Toolbar from './components/Toolbar'
-import SampleManager from './components/SampleManager'
-import useFilelist from './hooks/useFilelist'
-import useFolders from './hooks/useFolders'
-
-firebase.initializeApp(config)
-const storage = firebase.storage()
+import { IAuthContext, IAppProps } from '../interfaces'
+import Sidebar from './Sidebar'
+import Toolbar from './Toolbar'
+import SampleManager from './SampleManager'
+import useFolders from '../hooks/useFolders'
 
 export const AuthContext = React.createContext<IAuthContext | null>(null);
 
-const App: React.FC = () => {
+const App = (props: IAppProps) => {
 
   console.log("rerender app")
   
@@ -27,10 +21,6 @@ const App: React.FC = () => {
   const [configModeOn, setConfigModeOn]  = useState(false)
   const { folders, downloadingFolders, dispatchGetFolders } = useFolders()
 
-  // useEffect(()=>{
-  //   setAudioContext(new AudioContext())
-  // })
-
   return (
     <AuthContext.Provider value={{ isLoggedIn, setLoggedIn }}>
       <div className="App">
@@ -38,7 +28,7 @@ const App: React.FC = () => {
         <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
         <Toolbar setConfigModeOn={setConfigModeOn} configModeOn={configModeOn} />
         <Switch>
-          <Route path='/play' exact render={() => <Touchpad audioContext={audioContext} storage={storage} folders={folders} configModeOn={configModeOn}/>} />
+          <Route path='/play' exact render={() => <Touchpad audioContext={audioContext} storage={props.storage} folders={folders} configModeOn={configModeOn}/>} />
           <Route path='/join' exact render={() => <Join />} />
           <Route path='/login' exact render={() => <Login />} />
           <Route path='/samples' exact render={() => <SampleManager folders={folders}/>} />
